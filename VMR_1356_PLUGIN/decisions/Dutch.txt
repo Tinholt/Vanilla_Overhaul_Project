@@ -1,0 +1,32 @@
+country_decisions = {
+
+	found_voc = {
+		potential = {
+			tag = NED
+			NOT = { has_country_modifier = dutch_india_trade_co }
+			NOT = { has_country_flag = trade_company }
+			eastasian_trade_ports = {
+				has_discovered = ROOT
+			}			
+		}
+		allow = {
+			num_of_ports = 2
+			dip_tech = 15
+	
+			eastasian_trade_ports = {
+				owned_by = ROOT
+			}			
+		}
+		effect = {
+			set_country_flag = trade_company
+	
+			add_country_modifier = {
+				name = "dutch_india_trade_co"
+				duration = -1
+			}		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

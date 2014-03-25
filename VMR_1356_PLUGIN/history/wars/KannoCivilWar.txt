@@ -1,0 +1,39 @@
+name = "Kanno Disturbance"
+#casus_belli = cb_vassalize_mission
+war_goal = {
+	type = take_capital_vassalize
+	casus_belli = cb_vassalize_mission
+	tag = HTK
+}
+
+
+1356.1.1 = {
+	add_attacker = JAP
+	add_attacker = DTE
+	add_attacker = IMG
+	add_attacker = SBA
+	add_attacker = TKD
+	add_attacker = UES
+	add_defender = HTK
+	add_defender = HSK
+	add_defender = OTM
+	add_defender = OUC
+	add_defender = SMZ
+	add_defender = YMN
+}
+
+
+1392.1.1 = {
+	rem_attacker = JAP
+	rem_attacker = DTE
+	rem_attacker = IMG
+	rem_attacker = SBA
+	rem_attacker = TKD
+	rem_attacker = UES
+	rem_defender = HTK
+	rem_defender = HSK
+	rem_defender = OTM
+	rem_defender = OUC
+	rem_defender = SMZ
+	rem_defender = YMN
+}

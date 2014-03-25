@@ -1,0 +1,69 @@
+country_decisions = {
+
+	quebec_nation = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = changed_from_colonial_nation }
+			OR = {
+				is_former_colonial_nation = yes
+				is_colonial_nation = yes
+			}
+			colonial_canada = {
+				owned_by = ROOT
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 3	
+				}
+			}
+		}
+		allow = {
+			adm_tech = 15
+			is_former_colonial_nation = yes
+			is_subject = no
+			is_at_war = no
+			NOT = { exists = QUE }
+			owns = 996	# Innu
+			owns = 995	# Atikamekw
+			owns = 994	# stadacona
+			owns = 990	# Kwedech
+			owns = 992	# Algonquin
+			owns = 1002	# Abitbi
+			owns = 1000	# Cree
+			owns = 999	# Nunavik
+			owns = 998	# Ungava
+			owns = 997	# Labrador
+			is_core = 996	# Innu
+			is_core = 995	# Atikamekw
+			is_core = 994	# stadacona
+			is_core = 990	# Kwedech
+			is_core = 992	# Algonquin
+			is_core = 1002	# Abitbi
+			is_core = 1000	# Cree
+			is_core = 999	# Nunavik
+			is_core = 998	# Ungava
+			is_core = 997	# Labrador
+		}
+		effect = {
+			colonial_canada = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_tag = QUE
+			set_country_flag = changed_from_colonial_nation
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

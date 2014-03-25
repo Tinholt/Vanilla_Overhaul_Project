@@ -1,0 +1,35 @@
+government = merchant_republic
+#aristocracy_plutocracy = 1
+#centralization_decentralization = 2
+#innovative_narrowminded = 1
+mercantilism = 0.2
+#offensive_defensive = 0
+#land_naval = 1
+#quality_quantity = 1
+#serfdom_freesubjects = 1
+religion = catholic
+primary_culture = swedish
+technology_group = western
+historical_friend = HSA
+capital = 25	#Gotland
+
+1356.1.1 = {
+	monarch = {
+		name = "Die Tagfahrt"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1394.1.1 = {
+	government = noble_republic
+	monarch = {
+		name = "Victual Brothers"
+		adm = 3
+		dip = 2
+		mil = 5
+		regent = yes
+	}
+}

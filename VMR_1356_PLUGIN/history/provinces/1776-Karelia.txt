@@ -1,0 +1,35 @@
+#East Karelia
+
+owner = NOV
+controller = NOV 
+capital = "Kem"
+culture = karelian
+religion = finnish_pagan_reformed
+add_core = NOV
+add_core = FIN
+hre = no
+is_city = yes
+base_tax = 1
+trade_goods = copper
+manpower = 1
+discovered_by = SWE
+discovered_by = NOR
+discovered_by = DAN
+discovered_by = FIN
+discovered_by = GOT
+discovered_by = SHL
+discovered_by = SCA
+discovered_by = NOV
+discovered_by = MOS
+discovered_by = PSK
+discovered_by = RUS
+discovered_by = RYA
+discovered_by = TVE
+discovered_by = YAR
+discovered_by = PLT
+discovered_by = SMO
+discovered_by = NZH
+
+1450.1.1 = { fort1 = yes }
+1478.1.15 = { owner = MOS controller = MOS add_core = MOS remove_core = NOV }
+1503.4.1 = { owner = RUS controller = RUS add_core = RUS remove_core = MOS }

@@ -1,0 +1,221 @@
+#############
+# VASSALS	#
+#############
+
+# Berry, a French vassal (1360-1416)
+vassal = {
+	first = FRA
+	second = BER
+	start_date = 1360.10.1 # duchy created
+	end_date = 1416.6.15 # duchy inherited
+}
+
+# Bourbonnais, a French vassal (1356-1399)
+vassal = {
+	first = FRA
+	second = BOU
+	start_date = 1356.1.1 # duchy created at 1327.1.1
+	end_date = 1399.1.1
+}
+
+# Orleanais, a French vassal (1344-1376)
+vassal = {
+	first = FRA
+	second = ORL
+	start_date = 1344.1.1 # duchy created
+	end_date = 1376.9.1 # duchy back to france
+}
+
+# Orleanais, a French vassal (1392-1399 [1515])
+vassal = {
+	first = FRA
+	second = ORL
+	start_date = 1392.1.1 # duchy re-created
+	end_date = 1399.1.1 # 1515...
+}
+
+# Alençon, a French county vassal (1325-1414)
+vassal = {
+	first = FRA
+	second = ALE
+	start_date = 1325.12.16
+	end_date = 1414.1.1 # end of county
+}
+
+# Alençon, a French duchy vassal 1st phase (1414-1458)
+vassal = {
+	first = FRA
+	second = ALE
+	start_date = 1414.1.1 # duchy created
+	end_date = 1458.1.1 # royal domain
+}
+
+# Alençon, a French duchy vassal 2nd phase (1461-1474)
+vassal = {
+	first = FRA
+	second = ALE
+	start_date = 1461.1.1 # duchy returned
+	end_date = 1474.1.1 # royal domain
+}
+
+# Alençon, a French duchy vassal 3rd phase (1478-1549)
+vassal = {
+	first = FRA
+	second = ALE
+	start_date = 1478.1.1 # duchy returned
+	end_date = 1549.12.21 # royal domain
+}
+
+# Armagnac, a French county vassal
+vassal = {
+	first = FRA
+	second = AMG
+	start_date = 1337.1.1
+	end_date = 1399.1.1
+}
+
+# Foix, a French vassal
+vassal = {
+	first = FRA
+	second = FOI
+	start_date = 1356.1.1
+	end_date = 1399.1.1
+}
+
+# Burgundy, a French duchy vassal
+vassal = {
+	first = FRA
+	second = BUR
+	start_date = 1363.9.6 # duchy handed to Philippe I, son of king of france
+	end_date = 1387.1.1 # (for now 1399), later = Treaty of Arras (1435.9.20)
+}
+
+# Auvergne, a French vassal 1st phase
+vassal = {
+	first = FRA
+	second = AUV
+	start_date = 1356.1.1
+	end_date = 1360.9.29
+}
+
+# Auvergne, a French vassal
+vassal = {
+	first = FRA
+	second = AUV
+	start_date = 1361.11.21 # duchy was created
+	end_date = 1399.1.1 # keeps going until 16th century
+}
+
+# Brittany, a French duchy vassal
+vassal = {
+	first = FRA
+	second = BRI
+	start_date = 1365.4.12 # Treaty of Guerande
+	end_date = 1378.12.18 # secret alliance with england
+}
+
+# Brittany, a French duchy vassal
+vassal = {
+	first = FRA
+	second = BRI
+	start_date = 1381.4.4 # homage to france again with assurance neutrality in wars fra x eng
+	end_date = 1399.1.1 # so far
+}
+
+#############
+# PU's		#
+#############
+
+# County of Provence under Naples kingdom
+union = {
+	first = NAP
+	second = PRO
+	start_date = 1309.5.9
+	end_date = 1382.7.27 # death of Giovanna I
+}
+
+# County of Provence under Duchy of Anjou
+union = {
+	first = ANJ
+	second = PRO
+	start_date = 1382.7.27
+	end_date = 1389.11.1 # duke of Anjou becomes King of Naples
+}
+
+# Duchy of Anjou under Naples Kingdom
+union = {
+	first = NAP
+	second = ANJ
+	start_date = 1389.11.1 # Duke of Anjou is King of Naples
+	end_date = 1399.11.1 # Duke of Anjou is no longer King of Naples
+}
+
+# County of Provence under Duchy of Anjou
+union = {
+	first = ANJ
+	second = PRO
+	start_date = 1399.11.1 #Under rule of Duke of Anjou
+	end_date = 1435.2.2 # Duke of Anjou becomes King of Naples once again
+}
+
+# County of Provence under Naples Kingdom
+union = {
+	first = NAP
+	second = PRO
+	start_date = 1435.2.2 # Duke of Anjou is King of Naples
+	end_date = 1442.6.2 # Duke of Anjou is no longer King of Naples
+}
+
+# Duchy of Anjou under Naples Kingdom
+union = {
+	first = NAP
+	second = ANJ
+	start_date = 1435.2.2 # Duke of Anjou is King of Naples
+	end_date = 1442.6.2 # Duke of Anjou is no longer King of Naples
+}
+
+# County of Provence under Duchy of Anjou (due to game pro-1444 Anjou will be under PU with Provence [after René is no longer King of Naples he stays in Provence])
+union = {
+	first = PRO
+	second = ANJ
+	start_date = 1442.6.2 # Under rule of Duke of Anjou
+	end_date = 1480.7.10 # Duke of Anjou René I dies
+}
+
+# County of Provence under France domain
+union = {
+	first = FRA
+	second = PRO
+	start_date = 1481.12.10 # Death of the Duke of Anjou
+	end_date = 1486.1.1 # Inherited into the french royal domain
+}
+
+#############
+# RM's		#
+#############
+
+
+#############
+# Alliances	#
+#############
+
+alliance = {
+	first = MNF
+	second = ENG
+	start_date = 1342.6.1
+	end_date = 1365.4.12
+}
+
+alliance = {
+	first = BLO
+	second = FRA
+	start_date = 1342.6.1
+	end_date = 1365.4.12
+}
+
+alliance = {
+	first = BRI
+	second = ENG
+	start_date = 1378.12.18
+	end_date = 1381.4.4
+}

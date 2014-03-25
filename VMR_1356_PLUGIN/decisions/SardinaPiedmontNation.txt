@@ -1,0 +1,116 @@
+country_decisions = {
+
+	sardinia_piedmont_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = SPI }
+			government = monarchy
+			OR = {
+				tag = SAV
+				tag = SAR
+			}
+		}
+		allow = {
+			adm_tech = 15
+			is_subject = no
+			is_at_war = no
+			OR = {
+				AND = {
+					tag = SAR
+					NOT = { exists = SAV }
+				}
+				AND = {
+					tag = SAV
+					NOT = { exists = SAR }
+				}
+			}
+			owns = 102		# Nice
+			owns = 103		# Piedmont
+			owns = 127		# Sardinia
+			owns = 205		# Savoie
+			owns = 1875		# Cuneo
+			is_core = 102	# Nice
+			is_core = 103	# Piedmont
+			is_core = 127	# Sardinia
+			is_core = 205	# Savoie
+			is_core = 1875	# Cuneo			
+		}
+		effect = {
+			change_tag = SPI
+			set_capital = 103		# Piedmont
+			add_prestige = 10
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	sardinia_piedmont_nation_inherit = {
+		major = yes
+		potential = {
+			NOT = { exists = SPI }
+			government = monarchy
+			OR = {
+				AND = {
+					tag = SAV
+					SAR = { ai = yes }
+				}
+				AND = {
+					tag = SAR
+					SAV = { ai = yes }
+				}
+			}
+		}
+		allow = {
+			adm_tech = 15
+			is_subject = no
+			is_at_war = no
+			prestige = 75
+			dip = 3
+			adm = 3
+			OR = {
+				AND = {
+					tag = SAR
+					owns = 127			# Sardinia
+					is_core = 127		# Sardinia
+					senior_union_with = SAV
+					SAV = {
+						owns = 103		# Piedmont
+						is_core = 103	# Piedmont
+					}
+				}
+				AND = {
+					tag = SAV
+					owns = 103			# Piedmont
+					is_core = 103		# Piedmont
+					senior_union_with = SAR
+					SAR = {
+						owns = 127		# Sardinia
+						is_core = 127	# Sardinia
+					}
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					tag = SAV
+				}
+				inherit = SAR
+			}
+			if = {
+				limit = {
+					tag = SAR
+				}
+				inherit = SAV
+			}
+			change_tag = SPI
+			set_capital = 103	# Piedmont
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

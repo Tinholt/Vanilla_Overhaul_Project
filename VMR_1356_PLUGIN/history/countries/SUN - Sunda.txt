@@ -1,0 +1,115 @@
+government = despotic_monarchy
+#aristocracy_plutocracy = -2
+#centralization_decentralization = 2
+#innovative_narrowminded = 2
+mercantilism = 0.1
+#offensive_defensive = 0
+#land_naval = -2
+#quality_quantity = 3
+#serfdom_freesubjects = -2
+technology_group = chinese
+religion = hinduism
+primary_culture = sulawesi
+capital = 630
+
+1340.1.1 = {
+	monarch = {
+		name = "Surya Kencana"
+		dynasty = "Prabu"
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}
+
+1350.1.1 = {
+	monarch = {
+		name = "Wangi"
+		dynasty = "Prabu"
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}
+
+1357.1.1 = {
+	monarch = {
+		name = "Bunisora"
+		dynasty = "Prabu"
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1371.1.1 = {
+	monarch = {
+		name = "Wastu"
+		dynasty = "Prabu"
+		adm = 3
+		dip = 0
+		mil = 2
+	}
+}
+
+1475.1.1 = {
+	monarch = {
+		name = "Susuk Tunggal"
+		dynasty = "Prabu"
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1482.1.1 = {
+	monarch = {
+		name = "Siliwangi"
+		dynasty = "Prabu"
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}
+
+1521.1.1 = {
+	monarch = {
+		name = "Surawisesa"
+		dynasty = "Prabu"
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1535.1.1 = {
+	monarch = {
+		name = "Ratu"
+		dynasty = "Dewata"
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1543.1.1 = {
+	monarch = {
+		name = "Sakti"
+		dynasty = "Ratu"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1551.1.1 = {
+	monarch = {
+		name = "Tohaan"
+		dynasty = "Majaya"
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+

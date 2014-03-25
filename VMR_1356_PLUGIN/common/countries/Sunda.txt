@@ -1,0 +1,60 @@
+#Country Name: Please see filename.
+
+graphical_culture = asiangfx
+
+color = {  255  58  25  }
+
+historical_idea_groups = {
+	trade_ideas
+	naval_ideas
+	defensive_ideas
+	spy_ideas
+	offensive_ideas
+	diplomatic_ideas
+	religious_ideas
+	economic_ideas
+}
+
+historical_units = {
+	east_asian_spearmen
+	eastern_bow
+	asian_arquebusier
+	asian_charge_cavalry
+	asian_mass_infantry
+	asian_musketeer
+	reformed_asian_musketeer
+}
+
+monarch_names = {
+        "Aria Pangiri #0" = 10
+	"Prabu Guru #1" = 10
+	"Prabu Lingga #1" = 10
+	"Prabu Maharaja #1" = 10
+	"Prabu Raja #1" = 10
+	"Prabu Sasuk #1" = 10
+	"Sri Baduga #1" = 10
+	"Hyang Purwawisesa #0" = 10
+	"Pandan Solas #0" = 10
+	"Kertabumi #0" = 20
+	"Dyah Ranawijaya #0" = 10
+	"Pateudra #0" = 10
+	"Senapati Jimbun #0" = 10
+	"Sabrang Lor #0" = 10
+	"Prawata #0" = 10
+}
+
+leader_names = {
+	Ageng Ajigunawisesa
+	Brajawisesa Buana Bunisora
+	Nasution Nitisastro
+	Pucukwesi Prawiranega Purbacaraka
+	Sanghyang Subadio Sumual Suradipati
+	Wanayasa
+}
+
+ship_names = {
+	Pendet Legong Baris Topeng Barong
+	Kecak Batur Catur Bratan Pohen Lesong
+	Sangyang Batukaru Patas Musi Mesehe
+	Agong Seraya Merbuk Sanglang Kelatakan
+}

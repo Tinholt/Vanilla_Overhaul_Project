@@ -1,0 +1,97 @@
+protectorate = {
+	first = MAJ
+	second = SDN
+	start_date = 1356.1.1
+	end_date = 1399.1.11
+}
+
+protectorate = {
+	first = MAJ
+	second = KUT
+	start_date = 1356.1.1
+	end_date = 1399.1.11
+}
+
+protectorate = {
+	first = MAJ
+	second = ATJ
+	start_date = 1356.1.1
+	end_date = 1399.1.11
+}
+
+protectorate = {
+	first = MAJ
+	second = MLC
+	start_date = 1356.1.1
+	end_date = 1399.1.11
+}
+
+protectorate = {
+	first = MAJ
+	second = MKS
+	start_date = 1356.1.1
+	end_date = 1399.1.11
+}
+
+protectorate = {
+	first = MAJ
+	second = SUL
+	start_date = 1356.1.1
+	end_date = 1399.1.11
+}
+
+protectorate = {
+	first = MAJ
+	second = LAM
+	start_date = 1356.1.1
+	end_date = 1399.1.11
+}
+
+protectorate = {
+	first = MAJ
+	second = SRI
+	start_date = 1356.1.1
+	end_date = 1399.1.11
+}
+
+protectorate = {
+	first = MAJ
+	second = PAT
+	start_date = 1356.1.1
+	end_date = 1399.1.11
+}
+
+protectorate = {
+	first = MAJ
+	second = TOL
+	start_date = 1356.1.1
+	end_date = 1399.1.11
+}
+
+protectorate = {
+	first = MAJ
+	second = TER
+	start_date = 1356.1.1
+	end_date = 1399.1.11
+}
+
+protectorate = {
+	first = MAJ
+	second = TID
+	start_date = 1356.1.1
+	end_date = 1399.1.11
+}
+
+protectorate = {
+	first = MAJ
+	second = MHA
+	start_date = 1356.1.1
+	end_date = 1399.1.11
+}
+
+protectorate = {
+	first = MAJ
+	second = BLI
+	start_date = 1356.1.1
+	end_date = 1399.1.11
+}

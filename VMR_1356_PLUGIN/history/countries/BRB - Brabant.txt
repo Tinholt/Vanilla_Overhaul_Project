@@ -1,0 +1,105 @@
+# BRB - Brabant
+# 2014.1.16 - Fixed monarchs 1356-1427
+
+government = early_feudal_monarchy
+#aristocracy_plutocracy = -4
+#centralization_decentralization = 5
+#innovative_narrowminded = 2
+mercantilism = 0.1
+#offensive_defensive = 0
+#land_naval = 1
+#quality_quantity = 0
+#serfdom_freesubjects = -2 
+technology_group = western
+religion = catholic
+primary_culture = dutch
+capital = 95	# 's Hertogenbosch
+
+1355.12.5 = {
+	monarch = {
+		name = "Jeanne"
+		dynasty = "de Reginar"
+		birth_date = 1322.6.24
+		adm = 2
+		dip = 2
+		mil = 2
+		female = yes
+	}
+}
+
+1384.8.1 = { # duchy agreement on the heir
+	heir = {
+		name = "Antoine"
+		monarch_name = "Antoine"
+		dynasty = "de Valois"
+		birth_date = 1384.8.1
+		death_date = 1415.10.25
+		claim = 70
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+1406.11.1 = {
+	monarch = {
+		name = "Antoine"
+		dynasty = "de Valois"
+		birth_date = 1384.8.1
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+1406.11.1 = {
+	heir = {
+		name = "Jean"
+		monarch_name = "Jean IV"
+		dynasty = "de Valois"
+		birth_date = 1403.6.11
+		death_date = 1427.4.17
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1415.10.25 = {
+	monarch = {
+		name = "Jean IV"
+		dynasty = "de Valois"
+		birth_date = 1403.6.11
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1415.10.25 = { # brother of Jean IV
+	heir = {
+		name = "Philippe"
+		monarch_name = "Philippe I"
+		dynasty = "de Valois"
+		birth_date = 1404.7.25
+		death_date = 1430.8.14
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+1427.4.17 = {
+	monarch = {
+		name = "Philippe I"
+		dynasty = "de Valois"
+		birth_date = 1404.7.25
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+#1430.8.4 Philippe I dies with no heirs, Burgundy (cousin of Philippe I) inherits the Duchy of Brabant

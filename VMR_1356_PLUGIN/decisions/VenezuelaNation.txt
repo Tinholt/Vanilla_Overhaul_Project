@@ -1,0 +1,72 @@
+country_decisions = {
+
+	venezuela_nation = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = changed_from_colonial_nation }
+			OR = {
+				is_former_colonial_nation = yes
+				is_colonial_nation = yes
+			}
+			OR = {
+				colonial_colombia = {
+					owned_by = ROOT
+				}
+				colonial_guyana = {
+					owned_by = ROOT
+				}
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 3	
+				}
+			}
+		}
+		allow = {
+			adm_tech = 15
+			is_former_colonial_nation = yes
+			is_subject = no
+			is_at_war = no
+			NOT = { exists = VNZ }
+			owns = 830	# Maracaibo
+			owns = 831	# Caracas
+			owns = 834	# Barinas
+			owns = 741	# Cumana
+			owns = 742	# Guyana
+			owns = 743	# Essequibo
+			is_core = 830	# Maracaibo
+			is_core = 831	# Caracas
+			is_core = 834	# Barinas
+			is_core = 741	# Cumana
+			is_core = 742	# Guyana
+			is_core = 743	# Essequibo
+		}
+		effect = {
+			colonial_colombia = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = ROOT
+			}
+			colonial_guyana = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_tag = VNZ
+			set_country_flag = changed_from_colonial_nation
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

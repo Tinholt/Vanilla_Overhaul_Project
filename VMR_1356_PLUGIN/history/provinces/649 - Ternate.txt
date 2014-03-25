@@ -1,0 +1,33 @@
+#649 - Ternate
+
+culture = papuan
+religion = sunni
+capital = "Ternate"
+trade_goods = spices
+hre = no
+base_tax = 2
+manpower = 2
+owner = TER
+controller = TER
+add_core = TER
+citysize = 200
+discovered_by = chinese
+
+1512.1.1 = { discovered_by = POR } # Francisco Serrão
+1606.1.1 = {	owner = SPA
+		controller = SPA
+		culture = castillian
+		religion = catholic
+		citysize = 200
+	   } # Spanish forces arrive
+1631.1.1 = { add_core = SPA }
+1663.1.1 = {	owner = NED
+	   	controller = NED
+	   	remove_core = SPA
+	   	religion = reformed
+	   	culture = dutch
+	   }
+1688.1.1 = { add_core = NED }
+1700.1.1 = { citysize = 500 trade_goods = spices }
+1750.1.1 = { citysize = 1150 }
+1800.1.1 = { citysize = 1500 }

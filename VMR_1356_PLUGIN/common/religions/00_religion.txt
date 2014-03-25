@@ -1,0 +1,585 @@
+# If you add religions, and use those tags, do not change them without changing everywhere they are used.
+
+# Uses all 'modifiers' possible thats exported as a Modifier.
+
+christian = {
+	defender_of_faith = yes
+	
+	catholic = {
+		color = { 0.8 0.8 0 }
+		allowed_conversion = {
+			hussite
+			reformed
+			protestant
+		}
+		country = {
+			tolerance_own = 1
+			tolerance_heretic = -1
+		}
+		
+		on_convert = {
+			change_religion = catholic
+			add_stability = -3
+			
+			remove_country_modifier = the_test_act
+			remove_country_modifier = superintendent_office
+			remove_country_modifier = the_popery_act
+		}
+		
+		heretic = { BOGOMILIST WALDENSIAN FRATICELLI LOLLARD SOCINIAN }
+		
+		papacy = yes	# Can play with papacy stuff...
+	}
+
+	protestant = {
+		color = { 0 0 0.7 }
+		allowed_conversion = {
+			hussite
+			reformed
+			catholic
+		}
+		country = {
+			global_tax_modifier = 0.1
+			idea_cost = -0.10
+		}
+		
+		on_convert = {
+			change_religion = protestant
+			add_stability = -3
+			remove_country_modifier = counter_reformation
+			remove_country_modifier = the_statue_in_restraint_of_appeals
+			remove_country_modifier = bavarian_jesuits
+			remove_country_modifier = the_societas_jesu
+			remove_country_modifier = the_declaration_of_indulgence
+			remove_country_modifier = de_heretico_comburendo
+			remove_country_modifier = the_conventicle_act
+			
+			if = {
+				limit = {
+					NOT = { has_country_flag = reformation_money }
+				}
+				add_years_of_income = 1.0
+				random_owned_province = {
+					limit = {
+						religion = catholic
+					}
+					change_religion = protestant
+				}
+			}
+			set_country_flag = reformation_money
+		}
+		
+		heretic = { PENTECOSTAL PURITAN CONGREGATIONALIST }
+		
+		date = 1517.10.31
+	}
+
+	reformed = {
+		color = { 0.3 0.3 0.9 }
+		allowed_conversion = {
+			hussite
+			protestant
+			catholic
+		}
+		country = {
+			trade_efficiency = 0.1
+			advisor_pool = 1
+		}
+		
+		on_convert = {
+			change_religion = reformed
+			add_stability = -3
+			remove_country_modifier = counter_reformation
+			remove_country_modifier = the_statue_in_restraint_of_appeals
+			remove_country_modifier = bavarian_jesuits
+			remove_country_modifier = the_societas_jesu
+			remove_country_modifier = the_declaration_of_indulgence
+			remove_country_modifier = de_heretico_comburendo
+			remove_country_modifier = the_conventicle_act
+			
+			if = {
+				limit = {
+					NOT = { has_country_flag = reformation_money }
+				}
+				add_years_of_income = 1.0
+				random_owned_province = {
+					limit = {
+						religion = catholic
+					}
+					change_religion = reformed
+				}
+			}
+			set_country_flag = "reformation_money" 
+		}
+		
+		heretic = { METHODIST BAPTIST QUAKER }
+		
+		date = 1536.5.1
+	}
+
+	orthodox = {
+		color = { 0.7 0.5 0 }
+		country = {
+			stability_cost_modifier = -0.1
+			tolerance_own = 1
+		}
+		province = {
+			local_missionary_strength = -0.01
+		}
+		heretic = { OLD_BELIEVER MOLOKAN DUKHOBOR KHLYST SKOPTSY ICONOCLAST }
+		
+		has_patriarchs = yes		# Uses patriarch authority
+		misguided_heretic = yes		#other christians hate them less
+	}
+	
+	crusade_name = CRUSADE
+}
+
+muslim = {
+	defender_of_faith = yes
+	
+	sunni = {
+		color = { 0 0.6 0 }
+		province = {
+			local_missionary_strength = -0.02
+		}
+		country = {
+			tolerance_own = 1
+			heir_chance = 1.0
+		}
+		
+		heretic = { BEKTASHI AHMADI ZIKRI YAZIDI SIKH }
+		
+		uses_piety = yes				# Uses piety mechanics
+	}
+
+	shiite = {
+		color = { 0 0.8 0 }
+		province = {
+			local_missionary_strength = -0.02
+		}
+		country = {
+			heir_chance = 1.0
+			land_morale = 0.10
+		}
+		
+		heretic = { DRUZE HURUFI ZAIDI }
+		
+		uses_piety = yes				# Uses piety mechanics
+	}
+	
+	crusade_name = JIHAD
+}
+
+eastern = {
+
+	buddhism = {
+		color = { 0.8 0.3 0 }
+		country = {
+			tolerance_heretic = 2
+			tolerance_heathen = 1
+		}
+		
+		heretic = { ZEN }
+	}
+
+	hinduism = {
+		color = { 0 0.8 0.8 }
+		country = {
+			global_tax_modifier = 0.05
+			tolerance_heretic = 1
+		}
+		
+		heretic = { BHAKTI SIKH }
+	}
+
+	confucianism = {
+		color = { 0.8 0 0.9 }
+		country = {
+			tolerance_heretic = 2
+			tolerance_heathen = 1
+		}
+		
+		heretic = { TAOIST }
+	}
+
+	shinto = {
+		color = { 0.8 0 0 }
+		province = {
+			local_missionary_strength = -0.02
+		}
+		country = {
+			land_morale = 0.1
+			tolerance_heathen = -1
+		}
+		
+		heretic = { SHUGENDO }
+	}
+	
+	crusade_name = CRUSADE
+}
+
+pagan = {
+
+	animism = {
+		color = { 0.5 0.0 0.0 }
+		province = {
+			local_missionary_strength = 0.02
+		}
+		country = {
+			tolerance_own = 1
+			global_revolt_risk = -1
+		}
+		
+		heretic = { SNAKE_CLAN }
+		
+		annex = yes
+	}
+	
+	shamanism = {
+		color = { 0.5 0.3 0.3 }
+		province = {
+			local_missionary_strength = 0.02
+		}
+		country = {
+			tolerance_own = 1
+			global_revolt_risk = -1
+		}
+		
+		heretic = { GOAT_SKULL }
+		
+		annex = yes		
+	}
+	
+	totemism = {
+		color = { 0.5 0.45 0.45 }
+		province = {
+			local_missionary_strength = 0.02
+		}
+		country = {
+			tolerance_own = 1
+			global_revolt_risk = -1
+		}
+		
+		heretic = { BEAR_SPIRIT }
+		
+		annex = yes		
+	}
+	
+	crusade_name = CRUSADE
+}
+
+pagan = {
+	defender_of_faith = yes
+
+	west_african_pagan_reformed = {
+		color = { 0.4 0.3 0.25 }
+		allowed_conversion = {
+			sunni
+			shiite
+		}
+		country = {
+			tolerance_own = 1
+			tolerance_heretic = -1
+		}
+		
+		on_convert = {
+			change_religion = west_african_pagan_reformed
+			add_stability = -3
+			remove_country_modifier = counter_reformation
+			remove_country_modifier = the_statue_in_restraint_of_appeals
+			remove_country_modifier = bavarian_jesuits
+			remove_country_modifier = the_societas_jesu
+			remove_country_modifier = the_declaration_of_indulgence
+			remove_country_modifier = de_heretico_comburendo			
+		}
+		
+		annex = yes
+		
+		heretic = { OLD_WEST_AFRICAN }
+	}
+	baltic_pagan_reformed = {
+		color = { 0.75 0.5 0.35 }
+		allowed_conversion = {
+			catholic
+			reformed
+			protestant
+			hussite
+		}
+		country = {
+			defensiveness = 0.1
+			tolerance_heretic = 1
+		}
+		
+		on_convert = {
+			change_religion = baltic_pagan_reformed
+			add_stability = -3
+			remove_country_modifier = counter_reformation
+			remove_country_modifier = the_statue_in_restraint_of_appeals
+			remove_country_modifier = bavarian_jesuits
+			remove_country_modifier = the_societas_jesu
+			remove_country_modifier = the_declaration_of_indulgence
+			remove_country_modifier = de_heretico_comburendo			
+		}
+		
+		
+		heretic = { OLD_ROMUVA }	
+	}
+	finnish_pagan_reformed = {
+		color = { 0.65 0.65 0.1 }
+		allowed_conversion = {
+			catholic
+			reformed
+			protestant
+			orthodox
+			hussite
+		}
+		country = {
+			defensiveness = 0.1
+			tolerance_heretic = 1
+		}
+		
+		on_convert = {
+			change_religion = finnish_pagan_reformed
+			add_stability = -3
+			remove_country_modifier = counter_reformation
+			remove_country_modifier = the_statue_in_restraint_of_appeals
+			remove_country_modifier = bavarian_jesuits
+			remove_country_modifier = the_societas_jesu
+			remove_country_modifier = the_declaration_of_indulgence
+			remove_country_modifier = de_heretico_comburendo			
+		}
+		
+		
+		heretic = { OLD_SUOMENUSKO }	
+	}
+	slavic_pagan_reformed = {
+		color = { 0.85 0.73 0.4 }
+		allowed_conversion = {
+			catholic
+			reformed
+			protestant
+			orthodox
+			hussite
+		}
+		country = {
+			defensiveness = 0.1
+			tolerance_heretic = 1
+		}
+		
+		on_convert = {
+			change_religion = slavic_pagan_reformed
+			add_stability = -3
+			remove_country_modifier = counter_reformation
+			remove_country_modifier = the_statue_in_restraint_of_appeals
+			remove_country_modifier = bavarian_jesuits
+			remove_country_modifier = the_societas_jesu
+			remove_country_modifier = the_declaration_of_indulgence
+			remove_country_modifier = de_heretico_comburendo			
+		}
+		
+		
+		heretic = { OLD_SLAVIC }	
+	}
+	norse_pagan_reformed = {
+		color = { 0.75 0.75 0.75 }
+		allowed_conversion = {
+			catholic
+			reformed
+			protestant
+			orthodox
+			hussite
+		}
+		country = {
+			land_forcelimit_modifier = 0.10
+			naval_forcelimit_modifier = 0.10
+		}
+		
+		on_convert = {
+			change_religion = norse_pagan_reformed
+			add_stability = -3
+			remove_country_modifier = counter_reformation
+			remove_country_modifier = the_statue_in_restraint_of_appeals
+			remove_country_modifier = bavarian_jesuits
+			remove_country_modifier = the_societas_jesu
+			remove_country_modifier = the_declaration_of_indulgence
+			remove_country_modifier = de_heretico_comburendo			
+		}
+		
+		
+		heretic = { OLD_NORSE }	
+	}
+}
+
+eastern = {
+	tengri_pagan_reformed = {
+		color = { 0.1 0.3 0.85 }
+		allowed_conversion = {
+			sunni
+			shiite
+		}
+		country = {
+			heir_chance = 0.5
+			stability_cost_modifier = -0.10
+		}
+		
+		on_convert = {
+			change_religion = tengri_pagan_reformed
+			add_stability = -3
+			remove_country_modifier = counter_reformation
+			remove_country_modifier = the_statue_in_restraint_of_appeals
+			remove_country_modifier = bavarian_jesuits
+			remove_country_modifier = the_societas_jesu
+			remove_country_modifier = the_declaration_of_indulgence
+			remove_country_modifier = de_heretico_comburendo			
+		}
+		
+		
+		heretic = { OLD_TENGRI }	
+	}
+}
+
+pagan = {
+	aztec_reformed = {
+		color = { 0.95 0.3 0.3 }
+
+		country = {
+			land_morale = 0.5
+			global_revolt_risk = -1
+		}
+		
+		on_convert = {
+			change_religion = aztec_reformed
+			add_stability = -3
+			remove_country_modifier = counter_reformation
+			remove_country_modifier = the_statue_in_restraint_of_appeals
+			remove_country_modifier = bavarian_jesuits
+			remove_country_modifier = the_societas_jesu
+			remove_country_modifier = the_declaration_of_indulgence
+			remove_country_modifier = de_heretico_comburendo			
+		}
+		
+		annex = yes
+		
+		heretic = { OLD_AZTEC }	
+	}
+	inca_reformed = {
+		color = { 0.45 0.3 0.1 }
+
+		country = {
+			global_tax_modifier = 0.10
+			tolerance_own = 1
+		}
+		
+		on_convert = {
+			change_religion = inca_reformed
+			add_stability = -3
+			remove_country_modifier = counter_reformation
+			remove_country_modifier = the_statue_in_restraint_of_appeals
+			remove_country_modifier = bavarian_jesuits
+			remove_country_modifier = the_societas_jesu
+			remove_country_modifier = the_declaration_of_indulgence
+			remove_country_modifier = de_heretico_comburendo			
+		}
+		
+		annex = yes
+		
+		heretic = { OLD_INCA }	
+	}
+	hellenic_pagan = {
+		color = { 0.6 0.1 0.1 }
+
+		country = {
+			tolerance_own = 1
+			tolerance_heretic = -1
+		}
+		
+		on_convert = {
+			change_religion = hellenic_pagan
+			add_stability = -3
+			remove_country_modifier = counter_reformation
+			remove_country_modifier = the_statue_in_restraint_of_appeals
+			remove_country_modifier = bavarian_jesuits
+			remove_country_modifier = the_societas_jesu
+			remove_country_modifier = the_declaration_of_indulgence
+			remove_country_modifier = de_heretico_comburendo			
+		}
+		
+		
+		heretic = { GOAT_SKULL }	
+	}
+
+}
+
+zoroastrian_group = {
+	defender_of_faith = yes
+
+	zoroastrian = {
+		color = { 0.5 0.7 0.2 }
+
+		country = {
+			tolerance_own = 1
+			heir_chance = 0.5
+		}
+		
+		on_convert = {
+			change_religion = zoroastrian
+			add_stability = -3
+			remove_country_modifier = counter_reformation
+			remove_country_modifier = the_statue_in_restraint_of_appeals
+			remove_country_modifier = bavarian_jesuits
+			remove_country_modifier = the_societas_jesu
+			remove_country_modifier = the_declaration_of_indulgence
+			remove_country_modifier = de_heretico_comburendo			
+		}
+		
+		
+		heretic = { MAZDAKI MANICHEAN }	
+	}
+}
+
+
+christian = {	
+	hussite = {
+		color = { 0.7 0.6 0.4 }
+		allowed_conversion = {
+			reformed
+			protestant
+			catholic
+		}
+		country = {
+			adm_tech_cost_modifier = -0.1
+			global_manpower_modifier = 0.10
+		}
+		on_convert = {
+			change_religion = hussite
+			add_stability = -3
+			
+			remove_country_modifier = the_test_act
+			remove_country_modifier = superintendent_office
+			remove_country_modifier = the_popery_act
+		
+			if = {
+					limit = {
+						NOT = { has_country_flag = reformation_money }
+					}
+					add_years_of_income = 0.5
+					random_owned_province = {
+						limit = {
+							religion = catholic
+						}
+						change_religion = hussite
+					}
+			}
+			set_country_flag = reformation_money
+			add_country_modifier = {
+				name = convert_heretics
+				duration = 3650
+			}
+		}
+
+		heretic = { CALIXTINE TABORITE OREBITES SIROTCI }	
+		
+		date = 1419.12.1 
+	}
+}	

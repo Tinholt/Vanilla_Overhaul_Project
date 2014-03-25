@@ -1,0 +1,28 @@
+#BER - Berry
+#2014.1.18 Fixed monarchs 1356-1399
+
+government = early_feudal_monarchy
+#aristocracy_plutocracy = -4
+#centralization_decentralization = 5
+#innovative_narrowminded = 2
+mercantilism = 0.1
+#offensive_defensive = 0
+#land_naval = -3
+#quality_quantity = 0
+#serfdom_freesubjects = -3
+technology_group = western
+primary_culture = occitain
+religion = catholic
+capital = 179	# Bourges
+
+1360.10.1 = { # Duchy of Berry created (1st time) for youngest son of King France
+	monarch = {
+		name = "Jean I"
+		dynasty = "de Valois"
+		adm = 4
+		dip = 5
+		mil = 2
+	}
+}
+
+#1416.6.15 Jean I dies and duchy is incorporated into France by his request

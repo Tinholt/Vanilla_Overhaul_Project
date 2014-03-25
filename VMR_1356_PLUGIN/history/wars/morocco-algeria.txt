@@ -1,0 +1,18 @@
+
+name = "Second Moroccan Conquest of Algiers"
+#casus_belli = cb_claim_throne
+war_goal = {
+	type = take_capital_conquest
+	casus_belli = cb_conquest
+	tag = MOR
+}
+
+1353.1.1 = {
+	add_attacker = MOR
+	add_defender = ALG
+}
+
+1357.1.1 = {
+	rem_attacker = MOR
+	rem_defender = ALG
+}

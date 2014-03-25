@@ -1,0 +1,144 @@
+namespace = crusader_states
+
+country_event = {
+	id = crusader_states.1
+	
+	title = "crusader_states.1.t"
+	desc = "crusader_states.1.d"
+	
+	fire_only_once = yes
+	
+	picture = SIEGE_eventPicture
+	
+	trigger = {
+		owns = 327 #Adana		
+		NOT = { is_religion_enabled = protestant }
+		OR = {
+			religion = orthodox
+			religion = catholic
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = "crusader_states.1.a"
+		add_prestige = 5
+		add_dip_power = 25
+		327 = { change_province_name = Cilicia rename_capital = Sis }
+	}
+	option = {
+		trigger = {
+			NOT = { exists = CIC }
+		}
+		name = "crusader_states.1.b"
+		add_prestige = 5
+		add_dip_power = 25
+		327 = { change_province_name = Cilicia rename_capital = Sis cede_province = CIC change_religion = orthodox }	
+	}
+}
+
+country_event = {
+	id = crusader_states.2
+	
+	title = "crusader_states.2.t"
+	desc = "crusader_states.2.d"
+	
+	fire_only_once = yes
+	
+	picture = SIEGE_eventPicture
+	
+	trigger = {
+		owns = 377 #Aleppo		
+		NOT = { is_religion_enabled = protestant }
+		OR = {
+			religion = orthodox
+			religion = catholic
+		}
+
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = "crusader_states.1.a"
+		add_prestige = 5
+		add_dip_power = 25
+		377 = { change_province_name = Antioch rename_capital = Antioch }
+	}
+	option = {
+		trigger = {
+			NOT = { 
+				exists = ANT
+			}
+			tag = CYP
+		}
+		ai_chance = { factor = 100 }
+		name = "crusader_states.1.b"
+		add_prestige = 5
+		add_dip_power = 25
+		377 = { change_province_name = Antioch rename_capital = Antioch cede_province = ANT change_religion = ROOT add_core = ANT }
+		vassalize = ANT
+	}
+	option = {
+		trigger = {
+			NOT = { exists = ANT }
+			NOT = { tag = CYP }
+			}	
+		ai_chance = { factor = 0 }
+		name = "crusader_states.1.b"
+		add_prestige = 5
+		add_dip_power = 25
+		377 = { change_province_name = Antioch rename_capital = Antioch cede_province = ANT change_religion = ROOT add_core = ANT}
+	}	
+}
+
+country_event = {
+	id = crusader_states.3
+	
+	title = "crusader_states.3.t"
+	desc = "crusader_states.3.d"
+	
+	fire_only_once = yes
+	
+	picture = SIEGE_eventPicture
+	
+	trigger = {
+		owns = 378 #Beirut
+		NOT = { is_religion_enabled = protestant }
+		OR = {
+			religion = orthodox
+			religion = catholic
+		}
+
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = "crusader_states.1.a"
+		add_prestige = 10
+		add_dip_power = 50
+		378 = { change_province_name = Tripoli rename_capital = Tripoli }
+	}
+	option = {
+		trigger = {
+			exists = ANT
+			OR = { 
+				religion = catholic
+				tag = CYP
+			}
+		}
+		ai_chance = { factor = 100 }		
+		name = "crusader_states.3.b"
+		add_prestige = 5
+		add_dip_power = 25
+		378 = { change_province_name = Tripoli rename_capital = Tripoli cede_province = ANT add_core = ANT}
+	}
+}

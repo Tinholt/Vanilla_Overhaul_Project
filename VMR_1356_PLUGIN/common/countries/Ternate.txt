@@ -1,0 +1,58 @@
+#Country Name: Please see filename.
+
+graphical_culture = asiangfx
+
+color = { 124  166  52 }
+
+historical_idea_groups = {
+	trade_ideas
+	naval_ideas
+	defensive_ideas
+	offensive_ideas
+	religious_ideas
+	spy_ideas
+	quality_ideas
+	economic_ideas
+}
+
+historical_units = {
+	east_asian_spearmen
+	eastern_bow
+	asian_arquebusier
+	asian_charge_cavalry
+	asian_mass_infantry
+	asian_musketeer
+	reformed_asian_musketeer
+}
+
+monarch_names = {
+	"Baab #0" = 20
+	"Poit #0" = 20
+	"Komala #0" = 10
+	"Bakuku #0" = 10
+	"Ngara #0" = 10
+	"Patsaranga #0" = 10
+	"Cili #0" = 20
+	"Panji #0" = 20
+}
+
+leader_names = {
+	Shah
+	Tulu
+	Kie
+	Ngolo
+	Mamoli
+	Gapi
+	Komala
+}
+
+ship_names = {
+	Marhum Zainal Iskandar Wahuwa
+	ul-Bahrain ul-Mukarram ul-Rahman
+	Belait Tutong Tembureng
+	Batang Trusan Pandaruan Lungai Limbang
+	Tinjar Kuala Batu Danau
+	Medamit Lumut Telingan
+	Labi Sukang
+}
+

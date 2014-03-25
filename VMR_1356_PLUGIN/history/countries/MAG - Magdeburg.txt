@@ -1,0 +1,195 @@
+# 2014.3.8 Added monarchs 1356-1399
+
+government = theocratic_government
+#aristocracy_plutocracy = -3
+#centralization_decentralization = 4
+#innovative_narrowminded = 1
+mercantilism = 0.1
+#offensive_defensive = 0
+#land_naval = -1
+#quality_quantity = 0
+#serfdom_freesubjects = -4
+primary_culture = saxon
+religion = catholic
+technology_group = western
+capital = 52	# Magdeburg
+
+1327.5.30 = {
+	monarch = {
+		name = "Otto von Hessen"
+		birth_date = 1301.1.1
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}
+
+1361.4.30 = {
+	monarch = {
+		name = "Dietrich von Kugelweit"
+		birth_date = 1300.1.1
+		adm = 2
+		dip = 3
+		mil = 1
+	}
+}
+
+1367.12.17 = {
+	monarch = {
+		name = "Albrecht II"
+		birth_date = 1333.1.1
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+1372.1.11 = {
+	monarch = {
+		name = "Peter von Brünn"
+		birth_date = 1325.1.1
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1381.4.8 = {
+	monarch = {
+		name = "Ludwig von Meissen"
+		birth_date = 1341.2.25
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1382.2.23 = {
+	monarch = {
+		name = "Friedrich II"
+		adm = 4
+		dip = 2
+		mil = 3
+	}
+}
+
+1382.11.9 = {
+	monarch = {
+		name = "Albrecht III"
+		adm = 3
+		dip = 2
+		mil = 0
+	}
+}
+
+1403.6.12 = {
+	monarch = {
+		name = "Gunther II"
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1445.3.24 = {
+	monarch = {
+		name = "Friedrich III"
+		adm = 2
+		dip = 3
+		mil = 1
+	}
+}
+
+1464.11.12 = {
+	monarch = {
+		name = "Johann I"
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}
+
+1475.12.14 = {
+	monarch = {
+		name = "Ernst I"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1479.3.20 = {
+	monarch = {
+		name = "Ernst I"
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1513.8.4 = {
+	monarch = {
+		name = "Albrecht IV"
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+
+1545.9.25 = {
+	monarch = {
+		name = "Johann Albrecht I"
+		adm = 2
+		dip = 3
+		mil = 1
+	}
+}
+
+1551.5.18 = {
+	monarch = {
+		name = "Friedrich III"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1551.5.18 = { religion = protestant }
+
+1552.10.4 = {
+	monarch = {
+		name = "Sigismund I"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1566.9.14 = {
+	monarch = {
+		name = "Joachim Friedrich I"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+1598.1.1 = {
+	monarch = {
+		name = "Christian Wilhelm I"
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}
+
+1635.1.1 = {
+	monarch = {
+		name = "August I"
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+
+1650.1.1 = { primary_culture = prussian }

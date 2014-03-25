@@ -1,0 +1,17 @@
+name = "Vijayanagari Conquest of Madurai"
+#casus_belli = cb_claim_throne
+war_goal = {
+	type = take_capital_conquest
+	casus_belli = cb_conquest
+	tag = VIJ
+}
+
+1356.1.1 = {
+	add_attacker = VIJ
+	add_defender = MAD
+}
+
+1357.1.1 = {
+	rem_attacker = VIJ
+	rem_defender = MAD
+}

@@ -1,0 +1,41 @@
+union = {
+	first = ACH
+	second = ALB
+	start_date = 1332.1.1
+	end_date = 1364.1.1
+}
+
+vassal = {
+	first = BYZ
+	second = EPI
+	start_date = 1356.1.1
+	end_date = 1366.1.1
+}
+
+vassal = {
+	first = NAP
+	second = ACH
+	start_date = 1404.1.1
+	end_date = 1432.1.1
+}
+
+vassal = {
+	first = VEN
+	second = NAX
+	start_date = 1356.1.1
+	end_date = 1399.1.1
+}
+
+vassal = {
+	first = NAP
+	second = CEP
+	start_date = 1356.1.1
+	end_date = 1386.1.1
+}
+
+vassal = {
+	first = VEN
+	second = CEP
+	start_date = 1386.1.1
+	end_date = 1399.1.1
+}

@@ -1,0 +1,59 @@
+country_decisions = {
+
+	chile_nation = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = changed_from_colonial_nation }
+			OR = {
+				is_former_colonial_nation = yes
+				is_colonial_nation = yes
+			}
+			colonial_la_plata = {
+				owned_by = ROOT
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 3	
+				}
+			}
+		}
+		allow = {
+			adm_tech = 15
+			is_former_colonial_nation = yes
+			is_subject = no
+			is_at_war = no
+			NOT = { exists = CHL }
+			owns = 793	# Atacama
+			owns = 792	# Copiapo
+			owns = 787	# Picunmapu
+			owns = 784	# Huillimapu
+			owns = 783	# Patagonia Occidental
+			is_core = 793	# Atacama
+			is_core = 792	# Copiapo
+			is_core = 787	# Picunmapu
+			is_core = 784	# Huillimapu
+			is_core = 783	# Patagonia Occidental
+		}
+		effect = {
+			colonial_la_plata = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_tag = CHL
+			set_country_flag = changed_from_colonial_nation
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

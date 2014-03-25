@@ -1,0 +1,28 @@
+#339 - Kabylia
+
+owner = TUN
+controller = TUN
+culture = berber
+religion = sunni
+capital = "Bejaia"
+trade_goods = grain
+hre = no
+base_tax = 3
+manpower = 3
+citysize = 7100
+fort1 = yes
+add_core = TUN
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+1444.1.1 = { owner = ALG controller = ALG add_core = ALG remove_core = TUN }
+1450.1.1 = { citysize = 8600 }
+1500.1.1 = { citysize = 9065 }
+1550.1.1 = { citysize = 9675 }
+1600.1.1 = { citysize = 10030 }
+1650.1.1 = { citysize = 10500 }
+1700.1.1 = { citysize = 11054 }
+1750.1.1 = { citysize = 12986 }
+1800.1.1 = { citysize = 13470 }

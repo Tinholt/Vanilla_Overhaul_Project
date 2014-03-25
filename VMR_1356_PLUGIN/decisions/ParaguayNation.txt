@@ -1,0 +1,57 @@
+country_decisions = {
+
+	paraguay_nation = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = changed_from_colonial_nation }
+			OR = {
+				is_former_colonial_nation = yes
+				is_colonial_nation = yes
+			}
+			colonial_la_plata = {
+				owned_by = ROOT
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 3	
+				}
+			}
+		}
+		allow = {
+			adm_tech = 15
+			is_former_colonial_nation = yes
+			is_subject = no
+			is_at_war = no
+			NOT = { exists = PRG }
+			owns = 775	# Xeres
+			owns = 774	# Mbaracayu
+			owns = 776	# Itenines
+			owns = 799	# Chaco
+			is_core = 775	# Xeres
+			is_core = 774	# Mbaracayu
+			is_core = 776	# Itenines
+			is_core = 799	# Chaco
+		}
+		effect = {
+			colonial_la_plata = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_tag = PRG
+			set_country_flag = changed_from_colonial_nation
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

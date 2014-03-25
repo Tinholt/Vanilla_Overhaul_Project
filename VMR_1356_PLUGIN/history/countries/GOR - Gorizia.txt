@@ -1,0 +1,68 @@
+government = early_feudal_monarchy
+#aristocracy_plutocracy = -3
+#centralization_decentralization = 4
+#innovative_narrowminded = 1
+mercantilism = 0.1
+#offensive_defensive = 1
+#land_naval = -1
+#quality_quantity = -1
+#serfdom_freesubjects = -2
+technology_group = western
+religion = catholic
+primary_culture = austrian
+capital = 73	# Innsbruck
+
+1338.1.1  = {
+	monarch = {
+		name = "Albert III"
+		dynasty = "Meinhardiner"
+		birth_date = 1308.1.1
+		adm = 5
+		dip = 3
+		mil = 3
+	}
+}	
+
+1362.1.1  = {
+	monarch = {
+		name = "Meinhard VI"
+		dynasty = "Meinhardiner"
+		birth_date = 1335.1.1
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}	
+
+1385.1.1  = {
+	monarch = {
+		name = "Henry VI"
+		dynasty = "Meinhardiner"
+		birth_date = 1376.1.1
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}	
+
+1454.1.1  = {
+	monarch = {
+		name = "John II"
+		dynasty = "Meinhardiner"
+		birth_date = 1433.1.1
+		adm = 3
+		dip = 3
+		mil = 0
+	}
+}	
+
+1462.1.1  = {
+	monarch = {
+		name = "John II"
+		dynasty = "Meinhardiner"
+		birth_date = 1440.1.1
+		adm = 2
+		dip = 2
+		mil = 5
+	}
+}	

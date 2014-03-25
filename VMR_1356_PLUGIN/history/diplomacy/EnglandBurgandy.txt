@@ -1,0 +1,31 @@
+#England and Burgundy
+alliance = {
+	first = ENG
+	second = BUR
+	start_date = 1419.1.1
+	end_date = 1435.1.1
+}
+#England and Brittany
+alliance = {
+	first = ENG
+	second = BRI
+	start_date = 1419.1.1
+	end_date = 1435.1.1
+}
+
+#Burgundy and Flanders
+union = {
+	first = BUR
+	second = FLA
+	start_date = 1384.1.1
+	end_date = 1405.3.21
+}
+
+casus_belli = {
+				type = cb_restore_personal_union
+				first = ENG
+				second = FRA
+				start_date = 1356.1.1
+				end_date = 1419.1.1			
+			}
+			

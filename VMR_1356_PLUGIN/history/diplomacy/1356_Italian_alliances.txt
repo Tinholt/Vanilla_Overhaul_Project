@@ -1,0 +1,45 @@
+#############
+# PU's		#
+#############
+
+# Ferrara and Modena under the Estes
+union = { 
+	first = FER
+	second = MOD
+	start_date = 1264.1.1
+	end_date = 1393.1.1 # continues in vanilla
+}
+
+#############
+# Alliances	#
+#############
+
+alliance = {
+	first = URB
+	second = MLO
+	start_date = 1375.1.1
+	end_date = 1404.4.29
+}
+
+#############
+# VASSALS	#
+#############
+
+
+#############
+# RM's		#
+#############
+
+royal_marriage = {
+	 first = MAN 
+	 second = FER 
+	 start_date = 1356.1.1
+	 end_date = 1381.9.26
+}
+
+royal_marriage = {
+	 first = MAN 
+	 second = MLO 
+	 start_date = 1380.1.1
+	 end_date = 1391.2.7
+}

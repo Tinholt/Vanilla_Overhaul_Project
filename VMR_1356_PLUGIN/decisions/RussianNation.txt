@@ -1,0 +1,77 @@
+country_decisions = {
+
+	russian_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = RUS }
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			primary_culture = russian
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 3
+				}
+			}
+		}
+		allow = {
+			adm_tech = 15
+			is_subject = no
+			is_at_war = no
+			owns = 295			# Moskva
+			owns = 310			# Novgorod
+			is_core = 295			# Moskva
+			is_core = 310			# Novgorod
+			OR = {
+				AND = {
+					owns = 294		# Tver
+					is_core = 294
+				}
+				AND = {
+					owns = 308		# Yaroslavl	
+					is_core = 308
+				}
+			}
+			OR = {
+				AND = {
+					owns = 301		# Ryazan
+					is_core = 301
+				}
+				AND = {
+					owns = 293		# Smolensk
+					is_core = 293
+				}
+			}
+			OR = {
+				AND = {
+					owns = 306		# Nijni-Novgorod
+					is_core = 306
+				}
+				AND = {
+					owns = 307		# Vladimir	
+					is_core = 307
+				}
+			}			
+		}
+		effect = {
+			russian_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = RUS
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_tag = RUS
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+}

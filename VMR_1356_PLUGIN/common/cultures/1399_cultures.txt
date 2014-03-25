@@ -1,0 +1,11 @@
+west_slavic = {	
+	transylvanian = {
+		primary = TRA
+	}
+}
+
+finno_ugric = {
+	estonian = {
+	primary = EST
+	}
+}

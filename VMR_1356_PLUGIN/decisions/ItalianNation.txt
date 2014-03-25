@@ -1,0 +1,130 @@
+country_decisions = {
+
+	italian_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = ITA }
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			culture_group = latin
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 10
+				}
+			}
+		}
+		allow = {
+			adm_tech = 15
+			is_subject = no
+			is_at_war = no
+			owns = 104	# Lombardia
+			owns = 116	# Firenze
+			owns = 117	# Siena
+			owns = 118	# Roma
+			owns = 119	# Ancona
+			is_core = 104	# Lombardia
+			is_core = 116	# Firenze
+			is_core = 117	# Siena
+			is_core = 118	# Roma
+			is_core = 119	# Ancona			
+		}
+		effect = {
+			italian_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = ITA
+			}
+			add_prestige = 25
+			change_tag = ITA
+			ITA = {
+				set_capital = 118
+			}
+			if = {
+				limit = {
+					government = republic
+				}
+				change_government = despotic_monarchy
+			}
+			swap_free_idea_group = yes		#keep progress
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				government = republic
+			}
+		}
+	}
+	
+	gods_kingdom = {
+		major = yes
+		potential = {
+			NOT = { exists = ITA }
+			tag = PAP
+			NOT = { has_country_modifier = kingdom_of_god }
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns = 101		# Liguria
+			owns = 103		# Piedmont
+			owns = 104		# Lombardia
+			owns = 105		# Parma
+			owns = 106		# Modena
+			owns = 107		# Brescia
+			owns = 108		# Verona
+			owns = 109		# Mantua
+			owns = 111		# Friuli
+			owns = 112		# Venezia
+			owns = 113		# Ferrara
+			owns = 114		# Romagna
+			owns = 115		# Pisa
+			owns = 116		# Firenze
+			owns = 117		# Siena
+			owns = 118		# Roma
+			owns = 119		# Ancona
+			owns = 130		# Istria
+			owns = 1774		# Treviso
+			owns = 1862		# Cremona
+			owns = 1875		# Cuneo
+		}
+		effect = {
+			PAP = {
+				add_core = 101		# Liguria
+				add_core = 103		# Piedmont
+				add_core = 104		# Lombardia
+				add_core = 105		# Parma
+				add_core = 106		# Modena
+				add_core = 107		# Brescia
+				add_core = 108		# Verona
+				add_core = 109		# Mantua
+				add_core = 111		# Friuli
+				add_core = 112		# Venezia
+				add_core = 113		# Ferrara
+				add_core = 114		# Romagna
+				add_core = 115		# Pisa
+				add_core = 116		# Firenze
+				add_core = 117		# Siena
+				add_core = 118		# Roma
+				add_core = 119		# Ancona
+				add_core = 130		# Istria
+				add_core = 1774		# Treviso
+				add_core = 1862		# Cremona
+				add_core = 1875		# Cuneo
+			}
+			culture_group_union = latin
+			add_country_modifier = {
+				name = "kingdom_of_god"
+				duration = -1
+			}
+			country_event  = { id = catholic_flavor.2 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

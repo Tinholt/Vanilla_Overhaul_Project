@@ -1,0 +1,50 @@
+government = noble_republic
+#aristocracy_plutocracy = 1
+#centralization_decentralization = 4
+#innovative_narrowminded = -1
+mercantilism = 0.2
+#offensive_defensive = 1
+#land_naval = 1
+#quality_quantity = -1
+#serfdom_freesubjects = -2
+primary_culture = lombard
+religion = catholic
+technology_group = western
+capital = 115	# Pisa
+
+
+1356.1.1 = {
+	monarch = {
+		name = "Gian dell'Angelo"
+		ADM = 1
+		DIP = 4
+		MIL = 5
+	}
+}
+
+1369.3.22 = {
+	monarch = {
+		name = "Pietro Gambacorta"
+		ADM = 6
+		DIP = 3
+		MIL = 3
+	}
+}
+
+1390.1.1 = {
+	monarch = {
+		name = "Giovanni Gambacorta"
+		adm = 2
+		dip = 3
+		mil = 1
+	}
+}
+
+1494.1.1 = {
+	monarch = {
+		name = "Simone Orlandi"
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}

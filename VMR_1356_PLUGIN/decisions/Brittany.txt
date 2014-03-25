@@ -1,0 +1,120 @@
+country_decisions = {
+
+	mnf_brittany = {
+		major = yes
+		potential = {
+			NOT = { exists = BRI }
+			tag = MNF
+			BLO = {
+				exists = yes
+				ai = yes
+			}
+		}
+		allow = {
+			adm_tech = 5
+			is_subject = no
+			stability = 1
+			is_at_war = no
+			owns = 170				# Finistére
+			owns = 171				# Morbihan
+			is_core = 170			# Finistére
+			is_core = 171			# Morbihan
+			senior_union_with = BLO
+			NOT = { num_of_unions = 2 }
+		}
+		effect = {
+			change_tag = BRI
+			inherit = BLO
+			set_capital = 172 # Vendee
+			random_owned_province = {
+				limit = { culture = breton }
+				add_base_tax = 1
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+
+	blo_brittany = {
+		major = yes
+		potential = {
+			NOT = { exists = BRI }
+			tag = BLO
+			MNF = {
+				exists = yes
+				ai = yes
+			}
+		}
+		allow = {
+			adm_tech = 5
+			is_subject = no
+			stability = 1
+			is_at_war = no
+			owns = 169				# Armor
+			owns = 172				# Vendeé
+			is_core = 169			# Armor
+			is_core = 172			# Vendeé
+			senior_union_with = MNF
+			NOT = { num_of_unions = 2 }
+		}
+		effect = {
+			change_tag = BRI
+			inherit = MNF
+			set_capital = 172 # Vendee
+			random_owned_province = {
+				limit = { culture = breton }
+				add_base_tax = 1
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 200
+	}
+	
+	brittany_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = BRI }
+			primary_culture = breton
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 2
+				}
+			}
+		}
+		allow = {
+			adm_tech = 5
+			is_at_war = no
+			NOT = { exists = BRI }
+			owns = 169	# Armor
+			owns = 170	# Finistere
+			owns = 171	# Morbihan
+			owns = 172	# Vendee
+			is_core = 169	# Armor
+			is_core = 170	# Finistere
+			is_core = 171	# Morbihan
+			is_core = 172	# Vendee		
+		}
+		effect = {
+			add_prestige = 25
+			change_tag = BRI
+			set_capital = 172 # Vendee
+			random_owned_province = {
+				limit = { culture = breton }
+				add_base_tax = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 200
+	}
+	
+}

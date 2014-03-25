@@ -1,0 +1,17 @@
+# SKA - Skane
+
+government = early_feudal_monarchy
+#aristocracy_plutocracy = -1
+#centralization_decentralization = 3
+#innovative_narrowminded = 0
+mercantilism = 0.1
+#offensive_defensive = 0
+#land_naval = -1
+#quality_quantity = -2
+#serfdom_freesubjects = 2
+technology_group = western
+unit_type = western
+primary_culture = danish
+religion = catholic
+add_accepted_culture = swedish
+capital = 6	#Stockholm

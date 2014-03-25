@@ -1,0 +1,90 @@
+# MNF House of Monfort
+# 2014.1.28 Created country (rick)
+
+government = early_feudal_monarchy 
+#aristocracy_plutocracy = -2
+#centralization_decentralization = 2
+#innovative_narrowminded = -2
+mercantilism = 0.1
+#offensive_defensive = 2
+#land_naval = 2
+#quality_quantity = 2
+#serfdom_freesubjects = -2
+primary_culture = breton
+religion = catholic
+technology_group = western
+capital = 170	# Finistere
+
+1341.4.30 = {
+	monarch = {
+		name = "Jean IV"
+		dynasty = "de Dreux"
+		birth_date = 1295.1.1
+		adm = 2
+		dip = 2
+		mil = 4
+	}
+	heir = {
+		name = "Jean"
+		monarch_name = "Jean V"
+		dynasty = "de Dreux"
+		birth_date = 1339.4.12
+		death_date = 1399.11.1
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 5
+	}
+}
+
+1345.4.30 = {
+	monarch = {
+		name = "Regency Council"
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+	heir = {
+		name = "Jean"
+		monarch_name = "Jean V"
+		dynasty = "de Dreux"
+		birth_date = 1339.4.12
+		death_date = 1399.11.1
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 5
+	}
+}
+
+1361.4.12 = {
+	monarch = {
+		name = "Jean V"
+		dynasty = "de Dreux"
+		birth_date = 1339.4.12
+		adm = 2
+		dip = 3
+		mil = 5
+	}
+}
+
+1389.12.24 = {
+	heir = {
+		name = "Jean"
+		monarch_name = "Jean VI"
+		dynasty = "de Dreux"
+		birth_date = 1389.12.24
+		death_date = 1442.8.29
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1450.1.1 = { government = feudal_monarchy }
+
+1589.8.3 = { government = administrative_monarchy }
+
+1661.3.9 = { government = absolute_monarchy }

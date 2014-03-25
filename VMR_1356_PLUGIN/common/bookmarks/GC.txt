@@ -1,0 +1,60 @@
+bookmark =
+{
+	name = "GC2_NAME"
+	desc = "GC2_DESC"
+	date = 1356.12.25
+	
+	country = CAS
+	country = FRA
+	country = ENG
+	country = TUR
+	country = BYZ
+	country = HAB
+	country = POR
+	country = DAN
+	
+	easy_country = CAS
+	easy_country = FRA
+}
+
+bookmark = 
+{
+	name = "QOTN_NAME"
+	desc = "QOTN_DESC"
+	date = 1387.8.24
+	
+	country = DAN
+	country = SWE
+	country = NOR
+	
+	easy_country = DAN
+}
+
+
+bookmark =
+{
+	name = "oi_name"
+	desc = "oi_desc"
+	date = 1405.3.21
+	
+	country = TUR
+	country = BYZ
+	country = GOL
+	country = TIM
+
+}
+
+bookmark =
+{
+	name = "tt_name"
+	desc = "tt_desc"
+	date = 1420.05.21
+	
+	country = ENG
+	country = FRA
+	country = BUR
+	country = BRI
+	
+	easy_country = ENG
+
+}

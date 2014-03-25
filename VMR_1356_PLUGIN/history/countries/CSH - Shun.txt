@@ -1,0 +1,39 @@
+government = despotic_monarchy
+#aristocracy_plutocracy = -4
+#centralization_decentralization = -2
+#innovative_narrowminded = 1
+mercantilism = 0.1
+#offensive_defensive = -2
+#land_naval = -3
+#quality_quantity = 0
+#serfdom_freesubjects = -4
+technology_group = chinese
+religion = confucianism
+primary_culture = chihan
+historical_rival = KHA
+historical_rival = MNG
+historical_rival = CXI
+historical_rival = CZH
+capital = 688	# Kaifeng
+
+1356.1.1 = {
+	monarch = {
+		name = "Youliang"
+		dynasty = "Chen"
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+1627.1.1 = {
+	monarch = {
+		name = "Zicheng"
+		dynasty = "Li"
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+1644.1.1 = { capital = 689 } # Fengyuan

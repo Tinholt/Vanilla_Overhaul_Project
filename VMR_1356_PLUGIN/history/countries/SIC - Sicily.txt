@@ -1,0 +1,160 @@
+#SIC - Sicily
+# 2013.12.30 Added 1356-1399 controllers/revolts (rickroll120)
+
+government = early_feudal_monarchy
+#aristocracy_plutocracy = -3
+#centralization_decentralization = 4
+#innovative_narrowminded = 1
+mercantilism = 0.1
+#offensive_defensive = 1
+#land_naval = 1
+#quality_quantity = -1
+#serfdom_freesubjects = -2
+technology_group = western
+religion = catholic
+primary_culture = sicilian
+capital = 125	# Palermo
+
+1337.6.25 = {
+	monarch = { 
+		name = "Pietro II"
+		dynasty = "de Barcelona"
+		birth_date = 1304.1.1
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+	heir = {
+		name = "Ludovico"
+		monarch_name = "Ludovico"
+		dynasty = "de Barcelona"
+		birth_date = 1335.1.1
+		death_date = 1355.10.16
+		claim = 100
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1342.8.15 = {
+	monarch = { 
+		name = "Regency Council"
+		regent = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+	heir = {
+		name = "Ludovico"
+		monarch_name = "Ludovico"
+		dynasty = "de Barcelona"
+		birth_date = 1335.1.1
+		death_date = 1355.10.16
+		claim = 100
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+
+1354.1.1 = { # Ludovico dies with no heirs, his brother Federico rises to the throne
+	monarch = { 
+		name = "Federico IV"
+		dynasty = "de Barcelona"
+		birth_date = 1341.9.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1363.7.2 = {
+	heir = {
+		name = "Maria"
+		monarch_name = "Maria I"
+		dynasty = "de Barcelona"
+		birth_date = 1363.7.2
+		death_date = 1401.5.25
+		claim = 100
+		adm = 2
+		dip = 3
+		mil = 4
+		female = yes
+	}
+}
+
+1377.1.27 = {
+	monarch = { 
+		name = "Regency Council"
+		regent = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+	heir = {
+		name = "Maria"
+		dynasty = "de Barcelona"
+		monarch_name = "Maria I"
+		birth_date = 1363.7.2
+		death_date = 1401.5.25
+		claim = 100
+		adm = 2
+		dip = 3
+		mil = 4
+		female = yes
+	}
+}
+
+1377.7.27 = {
+	monarch = { 
+		name = "Maria I"
+		dynasty = "de Barcelona"
+		birth_date = 1363.7.2
+		adm = 2
+		dip = 3
+		mil = 4
+		female = yes
+	}
+}
+
+1401.5.25 = { # Maria I dies, leaving no heirs, her husband Martino I who was regning with her 'joint rule' rises to throne
+	monarch = { 
+		name = "Martino I"
+		dynasty = "de Barcelona"
+		birth_date = 1374.7.25
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+# 1409.7.25 - Martino I dies with no heirs, PU with Aragon begins
+# 1410.1.20 or after Compromise de Casp (~1402.6) - Sicily is inherited in Aragon
+
+1713.4.12 = {
+	monarch = {
+		name = "Vittorio Amedeo II"
+		dynasty = "di Savoia"
+		adm = 4
+		dip = 6
+		mil = 5
+		leader = { name = "Vittorio Amedeo II" type = general rank = 0 fire = 4 shock = 4 manuever = 2 siege = 2 }
+	}
+}
+
+# 1720.1.1 Vittorio Amedeo II becomes king of Sardinia-Piemont
+
+1806.3.11 = { government = enlightened_despotism }
+
+# Ferdinand/Ferrante flees to Sicily
+1806.3.11 = {
+	monarch = {
+		name = "Ferrante IV"
+		dynasty = "de Bourbon"
+		dip = 0
+		mil = 0
+		adm = 0
+	}		
+}

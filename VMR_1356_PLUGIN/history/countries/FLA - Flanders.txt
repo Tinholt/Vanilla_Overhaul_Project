@@ -1,0 +1,43 @@
+# FLA - Flanders
+# 2014.1.16 - Added monarchs 1356-1399
+
+government = early_feudal_monarchy
+#aristocracy_plutocracy = -3
+#centralization_decentralization = 4
+#innovative_narrowminded = 1
+mercantilism = 0.1
+#offensive_defensive = 0
+#land_naval = -1
+#quality_quantity = 0
+#serfdom_freesubjects = -4
+technology_group = western
+religion = catholic
+primary_culture = flemish
+capital = 90	# Antwerp
+
+1346.8.26 = {
+	monarch = {
+		name = "Louis II"
+		dynasty = "Dampierre"
+		adm = 5
+		dip = 4
+		mil = 4
+	}
+}
+
+1350.8.26 = {
+	heir = {
+		name = "Margaret"
+		monarch_name = "Margaret III"
+		dynasty = "Dampierre"
+		birth_date = 1330.3.13
+		death_date = 1384.1.1
+		claim = 95
+		adm = 3
+		dip = 1
+		mil = 0
+		female = yes
+	}
+}
+
+# 1384.1.30 - Louis II dies, Flanders is inherited by the Duchy of Burgundy

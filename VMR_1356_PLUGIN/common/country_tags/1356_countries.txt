@@ -1,0 +1,87 @@
+#Scandinavia
+ICE = "countries/Iceland.txt"
+ORK = "countries/Orkney.txt"
+SKA = "countries/Skane.txt"
+
+#Balkans
+
+
+#British Isles 
+
+
+#Colonies
+
+
+#Eastern Europe
+EST = "countries/Estonia.txt"
+
+#France 
+ARS = "countries/Artois.txt"
+RET = "countries/Rethel.txt"
+PBG = "countries/Palatinate of Burgundy.txt"
+ANJ = "countries/Anjou.txt"
+MNF = "countries/Monfort.txt"
+BLO = "countries/Blois.txt"
+	
+#HRE
+GOR = "countries/Gorizia.txt"
+	
+#Spain
+MAC	= "countries/Majorca.txt"
+LEO = "countries/Leon.txt"
+
+
+#Italy
+VER = "countries/Verona.txt"
+
+
+#Low Countries
+
+
+#Russia 
+
+
+#Arabia	
+
+		
+#Asia Minor		
+CIC = "countries/Cilicia.txt"
+ILK = "countries/Ilkhanate.txt"
+
+#Levant
+ANT = "countries/Antioch.txt"
+	
+#Maghreb
+
+
+#Central Asia
+
+
+#Persia	
+
+
+#Americas
+
+
+#Africa
+
+
+#Far East
+KUT = "countries/Kutei.txt"
+SRI = "countries/Srivijaya.txt"
+TER = "countries/Ternate.txt"
+TID = "countries/Tidore.txt"
+SDN = "countries/Sukadana.txt"
+SUN = "countries/Sunda.txt"
+LAM = "countries/Lampung.txt"
+MGM = "countries/MongMao.txt"
+MHA = "countries/Minahasa.txt"
+TOL = "countries/Tolaki.txt"
+
+#Daimyos
+
+
+
+#India
+
+

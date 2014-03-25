@@ -1,0 +1,6 @@
+vassal = {
+	first = KHA
+	second = OIR
+	start_date = 1300.1.1
+	end_date = 1367.1.1
+}

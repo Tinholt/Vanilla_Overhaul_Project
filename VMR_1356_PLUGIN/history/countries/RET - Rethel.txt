@@ -1,0 +1,19 @@
+#RET - Rethel
+# 2014.1.17 Created Rethel (rick)
+
+government = early_feudal_monarchy
+#aristocracy_plutocracy = -4
+#centralization_decentralization = 3
+#innovative_narrowminded = -1
+mercantilism = 0.1
+#offensive_defensive = -2
+#land_naval = -2
+#quality_quantity = -1
+#serfdom_freesubjects = -2
+primary_culture = wallonian
+culture_group_union = french
+religion = catholic
+technology_group = western
+capital = 181 # Rethel
+
+# 1328.1.1 Joan dies and county is inherited by Flanders

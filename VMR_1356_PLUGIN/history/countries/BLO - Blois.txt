@@ -1,0 +1,45 @@
+# BLO House of Blois
+# 2014.1.28 Created country (rick)
+
+government = early_feudal_monarchy 
+#aristocracy_plutocracy = -2
+#centralization_decentralization = 2
+#innovative_narrowminded = -2
+mercantilism = 0.1
+#offensive_defensive = 2
+#land_naval = 2
+#quality_quantity = 2
+#serfdom_freesubjects = -2
+primary_culture = breton
+religion = catholic
+technology_group = western
+capital = 169	# Armor
+
+1341.4.30 = {
+	monarch = {
+		name = "Charles I"
+		dynasty = "de Blois"
+		birth_date = 1319.1.1
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+}
+
+1364.9.29 = {
+	monarch = {
+		name = "Jeanne"
+		dynasty = "de Dreux"
+		birth_date = 1324.1.1
+		adm = 2
+		dip = 1
+		mil = 1
+		female = yes
+	}
+}
+
+1450.1.1 = { government = feudal_monarchy }
+
+1589.8.3 = { government = administrative_monarchy }
+
+1661.3.9 = { government = absolute_monarchy }

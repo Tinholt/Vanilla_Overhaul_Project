@@ -1,0 +1,59 @@
+#Country Name: Please see filename.
+
+graphical_culture = asiangfx
+
+color = { 134  16  17 }
+
+historical_idea_groups = {
+	trade_ideas
+	naval_ideas
+	defensive_ideas
+	offensive_ideas
+	religious_ideas
+	spy_ideas
+	quality_ideas
+	economic_ideas
+}
+
+historical_units = {
+	east_asian_spearmen
+	eastern_bow
+	asian_arquebusier
+	asian_charge_cavalry
+	asian_mass_infantry
+	asian_musketeer
+	reformed_asian_musketeer
+}
+
+monarch_names = {
+	"Ahmad #0" = 10
+	"Nuku  #0" = 10
+	"Enwer #0" = 10
+	"Mansyur #0" = 10
+	"Pangeran #0" = 10
+	"Malik #0" = 10
+	"Wahuwa #0" = 10
+	"Saifuddin #0" = 20
+	"al-Mansur #0" = 20
+}
+
+leader_names = {
+	Ebdulfeteh
+	Betute
+	Cheirul
+	Hemzeh
+	Hesenuddin
+	Ibnu
+	Roem
+	Syerifuddin
+	Zulkifli
+}
+
+ship_names = {
+	Muhammad Tahir Jamal Abidin Saifuddin Hasanuddin
+	Beleit Tutong Tembureng
+	Beteng Trusen Penderuen Lungei Limbeng
+	Tinjer Kuele Betu Deneu
+	Medemit Lumut Telingen
+	Lebi Sukeng Berem
+}

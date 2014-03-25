@@ -1,0 +1,62 @@
+hussite_capital_conformance = {
+	type = take_capital
+	
+	badboy_factor = 1
+	prestige_factor = 2
+	peace_cost_factor = 0.4
+	
+	po_change_religion = yes
+	
+	war_name = CONFORMANCE_WAR_NAME
+}
+
+romuva_capital_conformance = {
+	type = take_capital
+	
+	badboy_factor = 1
+	prestige_factor = 2
+	peace_cost_factor = 0.25
+	
+	po_change_religion = yes
+	
+	war_name = CONFORMANCE_WAR_NAME
+}
+
+goal_chinese_civil_war = {
+	type = take_province
+	
+	attacker = {
+		badboy_factor = 0.1
+		prestige_factor = 2
+		peace_cost_factor = 0.5	
+		
+		allowed_provinces = {
+			culture_group = ROOT
+		}
+		
+		po_annex = yes
+		po_demand_provinces = yes
+		
+		country_desc = ALL_CGROUP_COUNTRIES
+		prov_desc = ALL_CGROUP_PROVS
+	}
+	
+	defender = {
+		badboy_factor = 0.75
+		prestige_factor = 2
+		peace_cost_factor = 0.75	
+		
+		allowed_provinces = {
+			culture_group = FROM
+		}
+		
+		po_annex = yes
+		po_demand_provinces = yes
+		
+		country_desc = ALL_CGROUP_COUNTRIES
+		prov_desc = ALL_CGROUP_PROVS
+	}
+	allow_leader_change = yes
+	
+	war_name = NATION_WAR_NAME	
+}

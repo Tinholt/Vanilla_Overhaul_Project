@@ -1,0 +1,29 @@
+name = "Red Turban Rebellion"
+#casus_belli = cb_reconquest
+war_goal = {
+	type = take_capital_conquest
+	casus_belli = cb_conquest
+	province = 1816
+}
+
+1354.1.1 = {
+	add_attacker = MNG
+	add_attacker = CXI
+	add_attacker = CSH
+	add_attacker = CZH
+	add_attacker = CHG
+	add_defender = KHA
+	add_defender = OIR
+}
+
+# Peace
+1368.1.1 = {
+	rem_attacker = MNG
+	rem_attacker = CXI
+	rem_attacker = CSH
+	rem_attacker = CZH
+	rem_attacker = CHG
+	rem_defender = KHA
+	rem_defender = OIR
+}
+	

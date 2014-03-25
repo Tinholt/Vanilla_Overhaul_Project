@@ -1,0 +1,180 @@
+# ALE - Alencon
+# 2014.1.20 Added monarchs 1356-1399 and fixed pos-1399
+
+government = early_feudal_monarchy
+#aristocracy_plutocracy = -2
+#centralization_decentralization = -5
+#innovative_narrowminded = 2
+mercantilism = 0.1
+#offensive_defensive = 5
+#land_naval = -4
+#quality_quantity = -3
+#serfdom_freesubjects = -3
+primary_culture = cosmopolitan_french
+religion = catholic
+technology_group = western
+capital = 1879	# Alencon
+
+1325.12.16 = {
+	monarch = {
+		name = "Charles II"
+		dynasty = "de Valois"
+		birth_date = 1297.1.1
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}
+
+1337.2.1 = {
+	heir = {
+		name = "Charles"
+		monarch_name = "Charles III"
+		dynasty = "de Valois"
+		birth_date = 1337.2.1
+		death_date = 1375.7.5
+		claim = 100
+		adm = 1
+		dip = 3
+		mil = 1
+	}
+}
+
+1346.8.26 = {
+	monarch = {
+		name = "Charles III"
+		dynasty = "de Valois"
+		birth_date = 1337.2.1
+		adm = 1
+		dip = 3
+		mil = 1
+	}
+}
+
+1361.1.1 = { # Charles II resigns, his brother gets the county
+	monarch = {
+		name = "Pierre II"
+		dynasty = "de Valois"
+		birth_date = 1340.1.1
+		adm = 1
+		dip = 0
+		mil = 0
+	}
+}
+
+1385.1.1 = {
+	heir = {
+		name = "Jean"
+		monarch_name = "Jean I"
+		dynasty = "de Valois-Alençon"
+		birth_date = 1385.1.1
+		death_date = 1415.10.25
+		claim = 100
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1404.9.20 = {
+	monarch = {
+		name = "Jean I"
+		dynasty = "de Valois-Alençon"
+		birth_date = 1385.1.1
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1409.3.2 = {
+	heir = {
+		name = "Jean"
+		monarch_name = "Jean II"
+		dynasty = "de Valois-Alençon"
+		birth_date = 1409.3.2
+		death_date = 1415.10.25
+		claim = 100
+		adm = 0
+		dip = 2
+		mil = 4
+	}
+}
+
+#1414 elevated from county to duchy
+
+1415.10.25 = {
+	monarch = {
+		name = "Jean II"
+		dynasty = "de Valois-Alençon"
+		birth_date = 1409.3.2
+		adm = 0
+		mil = 2
+		dip = 4
+	}
+}
+
+1450.1.1 = { government = feudal_monarchy }
+
+1454.1.1 = {
+	heir = {
+		name = "René"
+		monarch_name = "René"
+		dynasty = "de Valois-Alençon"
+		birth_date = 1454.1.1
+		death_date = 1492.11.1
+		claim = 100
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}
+
+#1458-1461 duchy is confiscated, in french hands
+#1474-1478 duchy again confiscated
+
+1478.1.1 = {
+	monarch = {
+		name = "René"
+		dynasty = "de Valois-Alençon"
+		birth_date = 1454.1.1
+		adm = 1
+		mil = 1
+		dip = 3
+	}
+}
+
+1489.1.1 = {
+	heir = {
+		name = "Charles"
+		monarch_name = "Charles IV"
+		dynasty = "de Valois-Alençon"
+		birth_date = 1489.1.1
+		death_date = 1525.1.1
+		claim = 100
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1492.11.1 = {
+	monarch = {
+		name = "Charles IV"
+		dynasty = "de Valois-Alençon"
+		birth_date = 1489.1.1
+		adm = 1
+		mil = 2
+		dip = 1
+	}
+}
+
+1515.1.2 = { government = despotic_monarchy }
+
+# 1525.1.1 death if charles iv, no heirs - To Armagnac ?
+
+# 1549.12.21 To royal Domain
+
+1589.8.3 = { government = administrative_monarchy }
+
+1661.3.9 = { government = absolute_monarchy }

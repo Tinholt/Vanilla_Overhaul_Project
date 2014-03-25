@@ -1,0 +1,14 @@
+# Teutonic and Livonian Order
+vassal = {
+	first = TEU
+	second = LIV
+	start_date = 1236.1.1
+	end_date = 1466.10.19
+}
+# Poland and Livonian Order
+vassal = {
+	first = POL
+	second = LIV
+	start_date = 1466.10.19
+	end_date = 1525.1.1
+}

@@ -1,0 +1,59 @@
+government = feudal_monarchy
+#aristocracy_plutocracy = -3
+#centralization_decentralization = 2
+#innovative_narrowminded = 3
+mercantilism = 0.1
+#offensive_defensive = 0
+#land_naval = 0
+#quality_quantity = -2
+#serfdom_freesubjects = -2
+technology_group = western
+primary_culture = english
+religion = catholic
+historical_rival = ENG
+historical_friend = WAL
+capital = 246	# Newcastle
+
+1341.1.1 = {
+	monarch = {
+		name = "Henry I"
+		dynasty = "Percy"
+		ADM = 4
+		DIP = 3
+		MIL = 1
+	}
+} 
+
+1367.1.2 = {
+	monarch = {
+		name = "Henry II"
+		dynasty = "Percy"
+		ADM = 2
+		DIP = 2
+		MIL = 4
+	}
+} 
+
+1403.07.21 = {
+	heir = {
+		name = "Henry"
+		monarch_name = "Henry III"
+		dynasty = "Percy"
+		birth_date = 1403.07.21
+		death_date = 1459.1.1
+		claim = 75
+		adm = 2
+		dip = 0
+		mil = 3
+	}
+}
+
+1408.2.20 = {
+	monarch = {
+		name = "Henry II"
+		dynasty = "Percy"
+		ADM = 2
+		DIP = 2
+		MIL = 4
+	}
+} 

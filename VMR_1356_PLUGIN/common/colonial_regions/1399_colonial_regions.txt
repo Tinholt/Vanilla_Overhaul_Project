@@ -1,0 +1,58 @@
+colonial_australia = {
+	color = { 0 135 81 }
+
+
+	provinces = {
+		1084 1085 1086 1087 1088 1089 1090 1091 1092 1093 1094
+	}
+	
+
+	names = {
+		trigger = {
+				primary_culture = dutch
+		}
+		name = "New Holland"
+	}
+	
+	names = {
+		trigger = {
+				tag = POR
+		}
+		name = "Jave la Grande"
+	}
+	
+	# Generic
+	names = {
+		name = "[Root.GetAdjective] Australia"
+	}
+}
+
+colonial_south_africa = {
+	color = { 252 181 20 }
+
+
+	provinces = {
+			1172 1173 1174 1175 1176 1177 1178 1179 1180 1181 1182 1183 1184 1185 1186 1187 1188 1189 1190
+			1191 1192 1193 1194 1792
+	}
+	
+
+	names = {
+		trigger = {
+				primary_culture = dutch
+		}
+		name = "Kaapkolonie"
+	}
+	
+	names = {
+		trigger = {
+				primary_culture = english
+		}
+		name = "Cape Colony"
+	}
+	
+	# Generic
+	names = {
+		name = "[Root.GetAdjective] Cape"
+	}
+}

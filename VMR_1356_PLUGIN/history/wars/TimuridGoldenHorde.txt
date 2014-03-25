@@ -1,0 +1,20 @@
+name = "Timurid Invasion of the Golden Horde"
+war_goal = {
+	type = take_province_tribal_feud
+	casus_belli = cb_tribal_feud
+}
+
+1399.1.1 = {
+	add_attacker = TIM
+	add_defender = GOL
+	add_defender = NOG
+	add_defender = SHY
+}
+
+# Peace
+1399.12.31 = {
+	rem_attacker = TIM
+	rem_defender = GOL
+	rem_defender = NOG
+	rem_defender = SHY
+}

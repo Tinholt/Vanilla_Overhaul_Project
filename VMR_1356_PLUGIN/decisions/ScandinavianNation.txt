@@ -1,0 +1,54 @@
+country_decisions = {
+
+	scandinavian_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = SCA }
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			culture_group = scandinavian
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 3
+				}
+			}
+		}
+		allow = {
+			adm_tech = 15
+			is_subject = no
+			is_at_war = no
+			owns = 1		# Uppland
+			owns = 6		# Skane
+			owns = 7		# Vastergotland
+			owns = 12		# Sjaelland
+			owns = 15		# Jylland
+			owns = 17		# Akershus
+			is_core = 1		# Uppland
+			is_core = 6		# Skane
+			is_core = 7		# Vastergotland
+			is_core = 12	# Sjaelland
+			is_core = 15	# Jylland
+			is_core = 17	# Akershus
+		}
+		effect = {
+			scandinavian_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = SCA
+			}	
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 10
+			change_tag = SCA
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+}

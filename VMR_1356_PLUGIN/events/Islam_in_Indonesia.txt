@@ -1,0 +1,72 @@
+namespace=indo
+
+# Spread of Islam (hopefully)
+province_event = {
+	id = indo.1
+	title = indo.1.t
+	desc = indo.1.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+
+	trigger = {
+				is_year = 1387
+				NOT = { owned_by = BLI }
+				region = indonesian_region
+				OR = {
+		              religion = buddhism
+                      religion = hinduism
+				}
+	}
+	mean_time_to_happen = {
+		months = 3000
+
+		modifier = {
+			factor = 0.25
+			any_neighbor_province = { religion = sunni }
+		}
+	}
+
+	option = {
+		name = indo.1.a
+		change_religion = sunni
+		add_province_modifier = {
+			name = "religious_zeal_at_conv"
+			duration = 9000
+		}
+	}
+}
+
+
+country_event = {
+	id = indo.2
+	title = indo.2.t
+	desc = indo.2.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { religion = sunni }
+		NOT = { tag = MAJ }
+		num_of_religion = { religion = sunni value = 0.5 }
+	}
+	
+	mean_time_to_happen = {
+		years = 50
+	}
+	
+	option = {
+		name = indo.2.a
+		change_religion = sunni
+		capital_scope = {
+			change_religion = sunni
+		}
+		add_country_modifier = {
+			name = missionary_zeal
+			duration = 3650
+		}
+	}
+	option = {
+		name = indo.2.b
+		add_prestige = 5
+	}
+}

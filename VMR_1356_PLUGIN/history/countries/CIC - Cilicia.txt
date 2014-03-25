@@ -1,0 +1,67 @@
+government = despotic_monarchy 
+#aristocracy_plutocracy = -3
+#centralization_decentralization = 2
+#innovative_narrowminded = 1
+mercantilism = 0.1
+#offensive_defensive = 1
+#land_naval = -1
+#quality_quantity = 1
+#serfdom_freesubjects = -5
+primary_culture = armenian
+religion = orthodox
+technology_group = eastern
+capital = 327	# Yerevan
+
+
+1320.7.20 = {
+	monarch = {
+		name = "Leon IV"
+		dynasty = "Hethumid" 
+		ADM = 3
+		DIP = 4
+		MIL = 3
+	}
+}
+
+1341.8.28 = {
+	monarch = {
+		name = "Gosdantin II"
+		dynasty = "de Lusignan" 
+		ADM = 3
+		DIP = 3
+		MIL = 2
+	}
+}
+
+1344.4.17 = {
+	monarch = {
+		name = "Gosdantin III"
+		dynasty = "de Lusignan" 
+		ADM = 5
+		DIP = 4
+		MIL = 2
+	}
+	religion = catholic
+	set_country_flag = was_oriental
+	set_variable = { which = "sympathy_to_old_religion" value = 60 }
+}
+
+1362.12.21 = {
+	monarch = {
+		name = "Gosdantin IV"
+		dynasty = "de Lusignan"
+		ADM = 3
+		DIP = 4
+		MIL = 2
+	}
+}
+
+1374.1.1 = {
+	monarch = {
+		name = "Leon V"
+		dynasty = "de Lusignan"
+		ADM = 5
+		DIP = 4
+		MIL = 1
+	}
+} # last king of Armenia

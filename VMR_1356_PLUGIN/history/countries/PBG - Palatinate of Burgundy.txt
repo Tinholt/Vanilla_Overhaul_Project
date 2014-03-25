@@ -1,0 +1,23 @@
+# PBG - Palatinate of Burgundy
+# 2014.1.17  Created country
+
+government = early_feudal_monarchy
+mercantilism = 0.1
+primary_culture = burgundian
+religion = catholic
+technology_group = western
+capital = 193	# Frenche-Comte
+
+1361.11.21 = {
+	monarch = {
+		name = "Marguerite I"
+		dynasty = "de Capét"
+		birth_date = 1310.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+		female = yes
+	}
+}
+
+# 1382.5.29 - inherited by Burgundy, grandson was the duchy

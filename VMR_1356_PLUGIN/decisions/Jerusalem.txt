@@ -1,0 +1,76 @@
+country_decisions = {
+
+	kingdom_of_jerusalem = {
+		major = yes
+		potential = {
+			NOT = { exists = KOJ }
+			NOT = { tag = CYP }
+			NOT = { tag = ANT }
+			religion = catholic
+			NOT = { government = republic }
+			owns = 379
+			NOT = { is_religion_enabled = protestant }
+		}
+		allow = {
+			is_at_war = no
+			379 = { religion = catholic }
+		}
+		effect = {
+			add_prestige = 25
+			KOJ = { add_core = 379 }
+			release = KOJ
+			KOJ = { 
+				change_primary_culture = ROOT
+				add_core = 1855
+				add_core = 364
+				add_core = 1854
+				add_core = 327
+				add_core = 377
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	tag_to_jerusalem = {
+		major = yes
+		potential = {
+			OR = {
+				tag = CYP
+				tag = ANT
+			}
+			NOT = { exists = KOJ }
+		}
+		
+		allow = {
+			is_at_war = no
+			religion = catholic
+			NOT = { government = republic }
+			owns = 379
+			NOT = { is_religion_enabled = protestant }
+		}
+		effect = {
+			379 = { change_culture = ROOT change_religion = ROOT add_base_tax = 4}
+			321 = { add_base_tax = -4 }
+			change_tag = KOJ
+			swap_free_idea_group = yes		#keep progress
+			set_capital = 379
+			add_prestige = 25
+			add_core = 379
+			add_core = 1855
+			add_core = 364
+			add_core = 1854
+			add_core = 327
+			add_core = 377
+			add_accepted_culture = al_suryah_arabic
+			every_core_province = {
+				remove_core = CYP
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+}

@@ -1,0 +1,46 @@
+cb_hussite_conformance = {
+	
+		prerequisites = {
+			is_neighbor_of = FROM
+			religion = catholic
+			NOT = { religion = FROM }
+			FROM = { religion = hussite }
+		}
+	
+	war_goal = hussite_capital_conformance
+	
+}
+
+cb_romuva_conformance = {
+	
+		prerequisites = {
+			is_neighbor_of = FROM
+			religion = catholic
+			NOT = { religion = FROM }
+			FROM = { religion = baltic_pagan_reformed }
+		}
+	
+	war_goal = romuva_capital_conformance
+	
+}
+
+cb_chinese_civil_war = {
+
+		prerequisites = {
+			is_neighbor_of = FROM
+			OR = {
+				primary_culture = cantonese
+				primary_culture = chihan
+			}
+			FROM = { 
+				OR = {
+					primary_culture = cantonese
+					primary_culture = chihan
+				}
+			}
+		}
+	
+	war_goal = goal_chinese_civil_war
+	
+}
+	

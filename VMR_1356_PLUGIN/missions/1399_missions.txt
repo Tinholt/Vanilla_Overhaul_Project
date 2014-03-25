@@ -1,0 +1,918 @@
+portugal_discovers_the_azores = {
+
+	type = country
+	category = DIP
+	ai_mission = yes
+	
+	allow = {
+		tag = POR
+		367 = { range = FROM }
+		367 = {  is_empty = yes }
+		NOT = { has_idea = quest_for_the_new_world }
+		NOT = {
+			FROM = { has_country_modifier = "colonial_enthusiasm" }
+		}
+	}
+	abort = {
+		367 = { is_empty = no }
+	}
+	success = {
+			1567 = { units_in_province = 1 }
+	}
+	chance = {
+		factor = 5000
+		}
+	effect = {
+		discover_province = 367
+		FROM = {
+			add_country_modifier = {
+				name = "colonial_enthusiasm"
+				duration = 1825
+			}
+			add_country_modifier = {
+				name = "rush_of_colonists"
+				duration = 700
+			}
+		}
+		#367 = { add_colonysize = 200 cede_province = POR change_culture = owner change_religion = owner }
+	}
+}
+
+portugal_discovers_madeira = {
+
+	type = country
+	category = DIP
+	ai_mission = yes
+	
+	allow = {
+		tag = POR
+		368 = { range = FROM }
+		368 = {  is_empty = yes }
+		NOT = { has_idea = quest_for_the_new_world }
+		NOT = {
+			FROM = { has_country_modifier = "colonial_enthusiasm" }
+		}
+	}
+	abort = {
+		368 = { is_empty = no }
+	}
+	success = {
+			1471 = { units_in_province = 1 }
+	}
+	chance = {
+		factor = 5000
+	}
+	effect = {
+		discover_province = 368
+		FROM = {
+			add_country_modifier = {
+				name = "colonial_enthusiasm"
+				duration = 1825
+			}
+			add_country_modifier = {
+				name = "rush_of_colonists"
+				duration = 700
+			}
+		}
+		#368 = { add_colonysize = 200 cede_province = POR change_culture = owner change_religion = owner }
+	}
+}
+
+castille_discovers_the_canaries = {
+
+	type = country
+	category = DIP
+	
+	ai_mission = yes
+	
+	allow = {
+		OR = {
+			AND = {
+				tag = POR
+				368 = {  is_empty = no }
+				}
+			tag = CAS
+		}
+		366 = { range = FROM }
+		366 = {  is_empty = yes }
+		NOT = { has_idea = quest_for_the_new_world }
+		NOT = {
+			FROM = { has_country_modifier = "colonial_enthusiasm" }
+		}
+	}
+	abort = {
+		366 = { is_empty = no }
+	}
+	success = {
+			1471 = { units_in_province = 1 }
+	}
+	chance = {
+		factor = 5000
+	}
+	effect = {
+		discover_province = 366
+		FROM = {
+			add_country_modifier = {
+				name = "colonial_enthusiasm"
+				duration = 1825
+			}
+			add_country_modifier = {
+				name = "rush_of_colonists"
+				duration = 700
+			}
+		}
+		#366 = { add_colonysize = 200 cede_province = POR change_culture = owner change_religion = owner }
+	}
+}
+
+conquer_adana = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		OR = { 
+			tag = CYP
+			tag = KOJ
+			tag = ANT
+		}
+		is_subject = no
+		NOT = { owns = 327 }	# Adana
+		327 = {
+			owner = { 
+				NOT = { religion_group = christian }
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		owns = 327
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			mil = 4
+		}	
+	}
+	immediate = {
+		add_claim = 327
+	}
+	abort_effect = {
+		remove_claim = 327
+	}
+	effect = {
+		add_prestige = 5
+	}
+}
+
+reconquer_aleppo = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		OR = { 
+			tag = CYP
+			tag = KOJ
+			tag = ANT
+		}
+		is_subject = no
+		NOT = { owns = 377 }	# Aleppo
+		327 = {
+			owner = { 
+				religion_group = christian
+			}
+		}
+		377 = {
+			owner = { 
+				NOT = { religion_group = christian }
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		owns = 377
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			mil = 4
+		}	
+	}
+	immediate = {
+		add_claim = 377
+	}
+	abort_effect = {
+		remove_claim = 377
+	}
+	effect = {
+		add_prestige = 5
+	}
+}
+
+reconquer_beirut = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		OR = { 
+			tag = CYP
+			tag = KOJ
+			tag = ANT
+		}
+		is_subject = no
+		NOT = { owns = 378 }	# Beirut
+		327 = {
+			owner = { 
+				religion_group = christian
+			}
+		}
+		377 = {
+			owner = { 
+				religion_group = christian
+			}
+		}
+		378 = {
+			owner = { 
+				NOT = { religion_group = christian }
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		owns = 378
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			mil = 4
+		}	
+	}
+	immediate = {
+		add_claim = 378
+	}
+	abort_effect = {
+		remove_claim = 378
+	}
+	effect = {
+		add_prestige = 5
+	}
+}
+
+reconquer_jerusalem = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		OR = { 
+			tag = CYP
+			tag = KOJ
+			tag = ANT
+		}
+		is_subject = no
+		NOT = { owns = 379 }	# Beirut
+		327 = {
+			owner = { 
+				religion_group = christian
+			}
+		}
+		377 = {
+			owner = { 
+				religion_group = christian
+			}
+		}
+		378 = {
+			owner = { 
+				religion_group = christian
+			}
+		}
+		379 = {
+			owner = { 
+				NOT = { religion_group = christian }
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		owns = 379
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			mil = 4
+		}	
+	}
+	immediate = {
+		add_claim = 379
+	}
+	abort_effect = {
+		remove_claim = 379
+	}
+	effect = {
+		add_prestige = 5
+	}
+}
+
+TUR_conquer_adrianople = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		tag = TUR
+		is_subject = no
+		NOT = { owns = 149 }
+		149 = { owner = { NOT = { alliance_with = ROOT } } }
+	}
+	abort = {
+		is_subject = yes		
+	}
+	success = {
+		owns = 149
+	}
+	chance = {
+		factor = 15000
+		modifier = {
+			factor = 2
+			mil = 4
+		}	
+	}
+	immediate = {
+		add_claim = 149
+	}
+	abort_effect = {
+		remove_claim = 149
+	}
+	effect = {
+		add_prestige = 5
+		149 = { rename_capital = "Edirne" }
+	}
+}
+
+TUR_conquer_macedonia = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		tag = TUR
+		is_subject = no
+		NOT = { owns = 148 }
+		148 = { owner = { NOT = { alliance_with = ROOT } } }
+	}
+	abort = {
+		is_subject = yes		
+	}
+	success = {
+		owns = 148
+	}
+	chance = {
+		factor = 4000
+		modifier = {
+			factor = 2
+			owns = 149
+		}	
+	}
+	immediate = {
+		add_claim = 148
+	}
+	abort_effect = {
+		remove_claim = 148
+	}
+	effect = {
+		add_prestige = 5
+	}
+}
+
+TUR_conquer_central_anatolia = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		tag = TUR
+		NOT = { owns = 1846 }
+		is_subject = no
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		owns = 1846
+	}
+	chance = {
+		factor = 5000
+		modifier = {
+			factor = 2
+			owns = 326
+		}
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+	}
+	immediate = {
+		add_claim = 1846
+	}
+	abort_effect = {
+		remove_claim = 1846
+	}
+	effect = {
+		add_prestige = 5
+	}
+}
+
+TEU_vassalize_riga = {
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		tag = TEU
+		exists = RIG
+		is_subject = no
+		RIG = {
+			is_subject = no
+			NOT = { num_of_cities = ROOT }
+		}
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			NOT = { exists = RIG }
+			RIG = {
+				is_subject = yes
+			}
+		}
+	}
+	success = {
+		RIG = { vassal_of = TEU }
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = RIG value = 0 } }
+		}
+	}
+	immediate = {
+		add_casus_belli = {
+			type = cb_vassalize_mission
+			months = 120
+			target = RIG
+		}
+	}
+	abort_effect = {
+		remove_casus_belli = {
+			type = cb_vassalize_mission
+			target = RIG
+		}
+	}
+	effect = {
+		add_stability = 1
+		hidden_effect = {
+			remove_casus_belli = {
+				type = cb_vassalize_mission
+				target = RIG
+			}
+		}
+	}
+}	
+
+HAB_vassalize_gorizia = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		tag = HAB
+		exists = GOR
+		is_subject = no
+		GOR = {
+			is_subject = no
+			is_neighbor_of = ROOT
+			NOT = { num_of_cities = ROOT }
+		}
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			NOT = { exists = GOR }
+			GOR = {
+				is_subject = yes
+			}
+		}
+	}
+	success = {
+		GOR = { vassal_of = HAB }
+	}
+	chance = {
+		factor = 5000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = GOR value = 0 } }
+		}
+	}
+	immediate = {
+		add_casus_belli = {
+			type = cb_vassalize_mission
+			months = 120
+			target = GOR
+		}
+	}
+	abort_effect = {
+		remove_casus_belli = {
+			type = cb_vassalize_mission
+			target = GOR
+		}
+	}
+	effect = {
+		add_stability = 1
+		hidden_effect = {
+			remove_casus_belli = {
+				type = cb_vassalize_mission
+				target = GOR
+			}
+		}
+	}
+}
+
+subjugate_tirol = {
+	
+	type = country
+	ai_mission = yes
+	
+	category = MIL
+	
+	allow = {
+		tag = HAB
+		exists = TIR
+		is_year = 1360
+		is_subject = no
+		TIR = {
+			is_subject = no
+			is_emperor = no
+			is_neighbor_of = ROOT
+			NOT = { num_of_cities = ROOT }
+		}
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			NOT = { exists = TIR }
+			TIR = { is_subject = yes }
+		}
+	}
+	success = {
+		senior_union_with = TIR
+	}
+	chance = {
+		factor = 5000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = TIR value = 0 } }
+		}
+	}
+	immediate = {
+		add_casus_belli = {
+			type = cb_restore_personal_union
+			months = 120
+			target = TIR
+		}
+	}
+	abort_effect = {
+		remove_casus_belli = {
+			type = cb_restore_personal_union
+			target = TIR
+		}
+	}
+	effect = {
+		add_prestige = 10
+		hidden_effect = {
+			remove_casus_belli = {
+				type = cb_restore_personal_union
+				target = TIR
+			}
+		}
+	}
+}
+
+BUR_subjugate_flanders = {
+	
+	type = country
+	ai_mission = yes
+	
+	category = MIL
+	
+	allow = {
+		tag = BUR
+		exists = FLA
+		is_subject = no
+		FLA = {
+			is_subject = no
+			is_emperor = no
+			is_neighbor_of = ROOT
+			NOT = { num_of_cities = ROOT }
+		}
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			NOT = { exists = FLA }
+			FLA = { is_subject = yes }
+		}
+	}
+	success = {
+		senior_union_with = FLA
+	}
+	chance = {
+		factor = 5000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = FLA value = 0 } }
+		}
+	}
+	immediate = {
+		add_casus_belli = {
+			type = cb_restore_personal_union
+			months = 120
+			target = FLA
+		}
+	}
+	abort_effect = {
+		remove_casus_belli = {
+			type = cb_restore_personal_union
+			target = FLA
+		}
+	}
+	effect = {
+		add_prestige = 10
+		hidden_effect = {
+			remove_casus_belli = {
+				type = cb_restore_personal_union
+				target = FLA
+			}
+		}
+	}
+}
+
+DAN_reconquer_skane = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		tag = DAN
+		OR = {
+			NOT = { owns = 6 }
+			NOT = { owns = 1982 }
+			NOT = { owns = 26 }
+		}
+		is_subject = no
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		 owns = 6 
+		owns = 1982 
+		owns = 26 
+	}
+	chance = {
+		factor = 40000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+	}
+	immediate = {
+	}
+	abort_effect = {
+	}
+	effect = {
+		add_prestige = 10
+	}
+}
+
+conquer_afgan_people = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		tag = TIM
+		is_subject = no
+		OR = {
+			NOT = { owns = 450 }
+			NOT = { owns = 451 }
+			NOT = { owns = 448 }
+			NOT = { owns = 452 }
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		owns = 450 
+		owns = 451 
+		owns = 448 
+		owns = 452 
+	}
+	chance = {
+		factor = 10000
+		modifier = {
+			factor = 2
+			mil = 4
+		}	
+	}
+	immediate = {
+	}
+	abort_effect = {
+	}
+	effect = {
+		add_prestige = 5
+	}
+}
+
+conquer_khoresan = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		tag = TIM
+		is_subject = no
+		exists = KHO
+		is_neighbor_of = KHO
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		owns = 436
+		owns = 446
+		owns = 449
+		owns = 447
+	}
+	chance = {
+		factor = 5000
+		modifier = {
+			factor = 2
+			mil = 4
+		}	
+	}
+	immediate = {
+		add_claim = 436
+		add_claim = 446
+		add_claim = 449
+		add_claim = 447
+	}
+	abort_effect = {
+	}
+	effect = {
+		add_prestige = 5
+	}
+}
+
+conquer_port = {
+	
+	type = country
+
+	category = DIP
+	
+	allow = {
+		is_subject = no
+		NOT = { 
+			num_of_ports = 1
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		num_of_ports = 1
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			dip = 5
+		}
+		modifier = {
+			factor = 10
+			any_owned_province = {
+				any_neighbor_province = { has_port = yes }
+			}
+		}
+	}
+	immediate = {
+		random_neighbor_province = {
+			limit = { has_port = yes }
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+	}
+	effect = {
+		add_prestige = 5
+		random_owned_province = {
+			limit = { has_port = yes }
+			add_province_modifier = {
+				name = "benign_neglect_trade"
+				duration = 3650
+			}
+		}
+	}
+}
+
+HSA_expand_kontors = {
+
+	type = country
+
+	category = MIL
+	
+	allow = {
+		tag = HSA
+		government = merchant_republic
+		is_subject = no
+		25 = {
+			NOT = { owned_by = HSA }
+		}
+		47 = {
+			NOT = { owned_by = HSA }
+		}
+		38 = {
+			NOT = { owned_by = HSA }
+		}
+		33 = {
+			NOT = { owned_by = HSA }
+		}
+	}
+	abort = {
+		OR = {
+			NOT = {	government = merchant_republic }
+			is_subject = yes
+		}
+	}
+	success = {
+		OR = {
+			owns = 25			# Gotland
+			owns = 47			# Hinterpommen
+			owns = 38			# Riga
+			owns = 33			# Neva
+		}
+	}
+	chance = {
+		factor = 2000
+	}
+	
+	immediate = {
+		add_claim = 25
+		add_claim = 47
+		add_claim = 38
+		add_claim = 33
+	}
+	
+	effect = {
+		add_prestige = 5
+		add_mercantilism = 0.01
+	}
+}
+

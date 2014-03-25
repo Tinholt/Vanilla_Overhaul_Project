@@ -1,0 +1,175 @@
+# FOI - Foix
+# 2014.1.21 Added monarchs 1356-1399, fixed pos-1399 (rickroll120)
+
+government = early_feudal_monarchy
+#aristocracy_plutocracy = -1
+#centralization_decentralization = -1
+#innovative_narrowminded = 2
+mercantilism = 0.1
+#offensive_defensive = 4
+#land_naval = -4
+#quality_quantity = -1
+#serfdom_freesubjects = 1
+technology_group = western
+religion = catholic
+primary_culture = gascon
+capital = 176	# Pau
+
+1331.12.13 = {
+	monarch = {
+		name = "Gaston II"
+		dynasty ="de Foix-Béarn"
+		birth_date = 1308.1.1
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+	heir = {
+		name = "Gaston"
+		monarch_name = "Gaston III"
+		dynasty = "de Foix-Béarn"
+		birth_date = 1331.4.30
+		death_date = 1391.8.1
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1343.9.1 = {
+	monarch = {
+		name = "Gaston III"
+		dynasty ="de Foix-Béarn"
+		birth_date = 1331.4.30
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1356.1.1 = {
+	heir = {
+		name = "Gaston"
+		monarch_name = "Gaston IV"
+		dynasty = "de Foix-Béarn"
+		birth_date = 1356.1.1
+		death_date = 1384.1.1 # Gaston III kills his heir in a quarrel after tried to poison him
+		claim = 95
+		dip = 1
+		adm = 1
+		mil = 1
+	}
+}
+
+1391.8.1 = { # cousin of Gaston III, appointed by french court
+	monarch = {
+		name = "Mathieu"
+		dynasty ="de Foix-Béarn"
+		birth_date = 1331.4.30
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1398.1.1 = { # Mathieu dies leaving no heirs, her sister gets the county
+	monarch = {
+		name = "Isabelle"
+		dynasty ="de Foix-Béarn"
+		female = yes
+		birth_date = 1361.11.1
+		adm = 2
+		dip = 3
+		mil = 1
+	}
+}
+
+1398.1.1 = {
+	heir = {
+		name = "Jean"
+		monarch_name = "Jean I"
+		dynasty = "de Foix-Grailly"
+		birth_date = 1382.1.1
+		death_date = 1436.5.4
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+		
+1428.1.1 = {
+	monarch = {
+		name = "Jean I"
+		dynasty ="de Foix-Grailly"
+		birth_date = 1382.1.1
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1428.11.1 = {
+	heir = {
+		name = "Gaston"
+		monarch_name = "Gaston IV"
+		dynasty = "de Foix-Grailly"
+		claim = 95
+		birth_date = 1422.11.27
+		death_date = 1472.7.26
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+1436.5.4 = {
+	monarch = {
+		name = "Gaston IV"
+		dynasty = "de Foix-Grailly"
+		birth_date = 1422.11.27
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+1450.1.1 = { government = feudal_monarchy }
+
+1469.1.1 = {
+	heir = {
+		name = "François Phébus"
+		monarch_name = "François I Phébus"
+		dynasty = "de Foix-Grailly"
+		birth_date = 1469.1.1
+		death_date = 1483.1.7
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+1472.7.26 = {
+	monarch = {
+		name = "François I Phébus"
+		dynasty = "de Foix-Grailly"
+		birth_date = 1467.1.1
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+# 1479.2.13 Foix is incorporated in Navarra
+
+1512.9.1 = { government = despotic_monarchy }
+
+1555.5.30 = { government = administrative_monarchy }
+
+1560.1.1 = { religion = reformed }
+
+1661.3.9 = { government = absolute_monarchy }
+
+#Union with Navarra from 1472

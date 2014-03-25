@@ -1,0 +1,44 @@
+government = early_feudal_monarchy
+#aristocracy_plutocracy = -3
+#centralization_decentralization = 4
+#innovative_narrowminded = 1
+mercantilism = 0.1
+#offensive_defensive = 1
+#land_naval = 1
+#quality_quantity = -1
+#serfdom_freesubjects = -2
+technology_group = western
+religion = catholic
+primary_culture = lombard
+capital = 108	# Verona
+
+# Lords of Verona
+1351.1.1 = {
+	monarch = {
+		name = "Cangrande II"
+		dynasty = "Scaliger"
+		ADM = 3
+		DIP = 0
+		MIL = 3
+	}
+}
+
+1359.1.1 = {
+	monarch = {
+		name = "Cansignorio I"
+		dynasty = "Scaliger"
+		ADM = 2
+		DIP = 4
+		MIL = 2
+	}
+}
+
+1375.1.1 = {
+	monarch = {
+		name = "Antonio I"
+		dynasty = "Scaliger"
+		ADM = 4
+		DIP = 3
+		MIL = 2
+	}
+}

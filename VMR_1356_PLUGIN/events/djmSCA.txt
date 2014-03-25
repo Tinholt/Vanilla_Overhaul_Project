@@ -1,0 +1,142 @@
+namespace = scan_djm
+
+country_event = {
+	id = scan_djm.1
+	title = scan_djm.1.t
+	desc = scan_djm.1.d
+	picture = LIBERUM_VETO_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		tag = NOR
+		has_regency = yes
+		government = early_feudal_monarchy
+		NOT = { is_year = 1430 }
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		ai_chance = { 
+			factor = 40 
+			
+			modifier = {
+				factor = 2
+				AND = {
+					NOT = { alliance_with = SWE }
+					alliance_with = DAN
+				}
+			}			
+			
+		}
+		name = scan_djm.1.a
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		DAN = {
+			create_union = NOR
+		}
+	}
+	
+	option = {
+		ai_chance = { 
+			factor = 30 
+			
+			modifier = {
+				factor = 2
+				AND = {
+					NOT = { alliance_with = DAN }
+					alliance_with = SWE
+				}
+			}			
+			
+		}
+		name = scan_djm.1.c
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		SWE = {
+			create_union = NOR
+		}
+	}	
+	
+	option = {
+		name = scan_djm.1.b
+		ai_chance = { 
+			factor = 30
+			
+			modifier = {
+				factor = 2
+				AND = {
+					alliance_with = DAN
+					alliance_with = SWE
+				}
+			}
+			
+		}
+	
+		change_government = elective_monarchy
+		add_stability = -1
+		define_ruler = {
+			adm = 1
+			dip = 1
+			mil = 1
+		}
+		DAN = {
+			add_casus_belli = {
+				type = cb_restore_personal_union
+				months = 120
+				target = NOR
+			}
+		}
+		SWE = {
+			add_casus_belli = {
+				type = cb_restore_personal_union
+				months = 120
+				target = NOR
+			}
+		}
+		add_republican_tradition = 0.50
+	}
+}
+
+country_event = {
+	id = scan_djm.2
+	title = scan_djm.2.t
+	desc = scan_djm.2.d
+	picture = LIBERUM_VETO_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = DAN
+		NOT = { DAN = { senior_union_with = SWE } }
+		OR = {
+			SWE = { senior_union_with = MKL }
+			DAN = { senior_union_with = NOR }
+		}
+		is_year = 1387
+		NOT = { is_year = 1410 }
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = scan_djm.2.a
+		add_casus_belli = {
+			type = cb_restore_personal_union
+			months = 120
+			target = SWE
+		}
+		add_country_modifier = {
+			name = "swedish_noble_support"
+			duration = 1825
+		}
+	}
+}

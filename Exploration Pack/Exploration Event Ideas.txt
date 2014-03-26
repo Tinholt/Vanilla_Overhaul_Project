@@ -120,16 +120,26 @@ Option 1: Secure the Dodos!(100 ducats, 100% chance to spawn event 12)
 Option 2: Put down rat traps. (50 ducats, 40% chance to spawn event 12)
 Option 3: They'll be fine. (event 9)
 
-# Dodos 12
+#Dodos 12
 Title: Dodo is saved. 
 Image: DODO_eventPicture
 Description: Our efforts were effective and we have saved the Dodo from its demise. Now all we have to figure out is how we can make this odd bird a desired pet. 
 Trigger: Success in Dodos 11
 Option 1: Excellent. (3 prestige, 150 ducats, "Dodo Dealer" province modifier (gives extra province basetax modifier))
 
-#
-Title: 
-Image:
-Description:
-Trigger:
-Option 1:
+#Platypus 1
+Title: A Taxidermist Hoax.
+Image: PLATYPUS_PELT_eventPicture
+Description: One of our Privateers has sent us a pelt and sketch of a newly discovered animal from Oceania. However, this animal is so odd its nothing short of a hoax. It looks like a ducks beak stuck on a beaver's body. How dare they insult our court with this abomination.
+Trigger: Discovered Tasmania.
+Option 1: Probably the creation of some Asian taxidermist.
+Option 2: What a wicked beast.
+Option 3: Call him out for it.
+
+#Platypus 2
+Title: A Hoax.. Or Not? 
+Image: PLATYPUS_eventPicture
+Description: To prove his right the privateer took the beast with him to the court for all to see. The beast had a furry body, a broad, flat tail and a duckbill on its snout. That's what we saw in front of us. Nature truly couldn't have created a more fascinating creature. And apparently not a hoax. Maybe an apology is in order.
+Trigger: Tasmania colonized
+Option 1: He can't blame us for not believing him, can he? 
+

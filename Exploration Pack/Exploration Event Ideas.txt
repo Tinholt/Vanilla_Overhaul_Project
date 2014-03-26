@@ -1,0 +1,135 @@
+
+#Narwhals 1
+Title: Sea Unicorns?
+Image: NARWHAL_eventPicture
+Description: This morning an odd creature washed ashore. What looked like a whale, but had something protruding from its head. A horn. You had seen these horns before at the English court, hanging on the wall like priced possessions. Unicorn horns is what they called them. Stuff of legends. Maybe some noble will pay a good price for these.
+Option 1: I know a fellow. (money)
+Option 2: Where there is one, there are many! (start event line)
+Trigger: Player must own Reykjavik or be leader in a personal union with he who owns Reykjavik. Year is after 1470.
+
+#Narwhals 2
+Title: In Search of the Mighty Sea Unicorn.
+Image: SHIP_LEAVES_HARBOUR_eventPicture
+Description: Having not yet revealed your discovery of the horn and its origin you employ the privateer Hans Pothorst to help you track down the birthplace of this fascinating creature. However, to help him in his aid the privateer asks for a more seaworthy ship. How will we reply?
+Option 1: Give the man his ship! (Positive, but costs ducats, maybe price of heavy ship?)
+Option 2: The current ship seems fine.(Negative)
+
+#Narwhals 3 (Positive)
+Title: Land Ahoy!
+Image: GREENLAND_CAMP_eventPicture
+Description: Our privateer has returned with word of new land. Sadly, no sight of the Sea Unicorn and the land is frozen solid. A deck hand claims to have seen a horn sticking out from the ocean, when they embarked on the shore. What to do?
+Option 1: Maybe if we sell the horn we will break even. (return 90% of the money lost in previous event, discover the coast of Greenland + sea provinces leading to it)
+Option 2: Set up camp. We have come so close, we can not give up now. (pay colonization costs, but get colony in Greenland)
+
+#Narwhals 4 (Negative)
+Title: An empty harbour.
+Image: EMPTY_HARBOUR_eventPicture
+Description: The harbour is empty and the privateer has yet to return. His venture is taking longer than expected. We can only hope for his safe return.
+Option 1: And return he will. (end of event chain)
+
+#Narwhals 5
+Title: Sea Unicorn Spotted!
+Image: NARWHAL_SIGHTER_eventPicture
+Description: Just when all hope had been lost and the settlers were preparing for abandoning the outpost they spotted the long sought after Sea Unicorn. This is most fortunate. 
+Option 1: Excellent. (Changes Greenland's tradegood to Ivory)
+
+# Dodos 1
+Title: Our ships need to resupply.
+Image: DAMAGED_AFTER_STORM_eventPicture
+Description: We reached the Indian ocean. However, our ships are damaged and our crew is malnourished. We need to resupply, but we know of no safe havens in the area.  Hopefully we'll find something soon.
+Option 1: I could use a coconut right now.
+Trigger:
+
+#Dodos 2
+Title: Mauritius Discovered.
+Image: BAY_OF_ISLAND_eventPicture
+Description: We have finally embarked upon an archipelago where we can resupply our ships. The island is home to many fruits, nuts and wildlife. This should fill the stomachs of our crew.
+Trigger:Mauritius discovered & and does not own any of the 3 other islands. This island is not owned by someone else.
+Option 1: We should claim this land.  (get a colony on this island)
+Option 2: Who cares about a bunch of islands? Our destination is India! 
+
+#Dodos 3
+Title: Reunion Discovered.
+Image: BAY_OF_ISLAND_eventPicture
+Description: We have finally embarked upon an archipelago where we can resupply our ships. The island is home to many fruits, nuts and wildlife. This should fill the stomachs of our crew.
+Trigger: Reunion discovered & and does not own any of the 3 other islands. This island is not owned by someone else.
+Option 1: We should claim this land. (get a colony on this island)
+Option 2: Who cares about a bunch of islands? Our destination is India! 
+
+#Dodos 4
+Title: Comoros Discovered.
+Image: BAY_OF_ISLAND_eventPicture
+Description: We have finally embarked upon an archipelago where we can resupply our ships. The island is home to many fruits, nuts and wildlife. This should fill the stomachs of our crew.
+Trigger: Comoros discovered & and does not own any of the 3 other islands. This island is not owned by someone else.
+Option 1: We should claim this land. (get a colony on this island)
+Option 2: Who cares about a bunch of islands? Our destination is India!
+
+#Dodos 5
+Title: Seychelles Discovered.
+Image: BAY_OF_ISLAND_eventPicture
+Description: We have finally embarked upon an archipelago where we can resupply our ships. The island is home to many fruits, nuts and wildlife. This should fill the stomachs of our crew.
+Trigger: Seychelles discovered & and does not own any of the 3 other islands. This island is not owned by someone else.
+Option 1: We should claim this land. (get a colony on this island)
+Option 2: Who cares about a bunch of islands? Our destination is India!
+
+#Dodos 6
+Title: An Odd Flightless Bird.
+Image: DODO_eventPicture
+Description: When exploring the island we stumbled upon this odd creature.  The bird doesn't seem bothered by our presence, rather it seems rather interested in our helmets and does everything in its might to get hold of them. Its twice the size of Swans, but lacks the ability of flight. It probably doesn't have any natural predators.
+Trigger: Owns Mauritius.
+Option 1: And thus it must taste great! (extra naval replenishing rate for a year -> event 7)
+Option 2: Take some specimens back home. (event 8)
+Option 3: Leave the birds alone. (after 60 years -> event 9)
+
+
+#Dodos 7
+Title: A Foul Taste. 
+Image: HORRIBLE_TASTE_eventPicture
+Description: The bird tastes horrible and your crew look down upon their meal with disgust. The Dutch sailor coined the name "walghvogel", which translates to disgusting bird. Apparently not everything tastes like chicken.
+Trigger: Dodos 6 - option 1
+Option 1:  Feed it to the dogs. (after 60 years -> event 9)
+
+#Dodos 8
+Title: An Not So Tasty Bird.
+Image: HORRIBLE_TASTE_eventPicture
+Description: On the journey back home your deck hands took it in their liberty to taste the specimens you'd taken with you. But before they had the chance to savour their meal the men were already standing on deck, puking over the railing. Apparently the birds don't taste that well. 
+Trigger: Dodos 6 - option 2
+Option 1: Do we still have some left?
+
+#Dodos 9
+Title: The Last Dodo.
+Image: LAST_DODO_AT_CAMP_eventPicture
+Description: Before we knew it there were no more Dodos, or Walghvogels, left. The name doesn't matter. What does matter is that this species will be lost to history. Apparently the rats which hitchhiked on board of our ship have been feasting on their eggs and the dogs hunted down the remaining young.
+Trigger:
+Option 1: Oops. (prestige -3)
+
+#Dodos 10
+Title: A Strange Visitor.
+Image: COURT_DODO_eventPicture
+Description: Luckily we were able to bring back one of the birds back to our court to present to the local nobles and their children. The bird, which is now called "Donsaars" due to its plucky behind, seems to be welbehaved among the children who started calling him Dodo. Dodo. What an interesting name.
+Trigger:
+Option 1: Might make a good pet. (50 ducats & event 11)
+Option 2: The bird shouldn't become a child's plaything. (event 9)
+
+#Dodos 11
+Title: Plague of Rats
+Image: RATS_eventPicture
+Description: Apparently rats have been feasting upon the Dodo eggs and have been multiplying over the island ever since we embarked. Due to this less Dodo chicks are born. We must stop this! Otherwise there might not be enough Dodos the next time we come around.
+Trigger: Dodos 10 - option 1 
+Option 1: Secure the Dodos!(100 ducats, 100% chance to spawn event 12)
+Option 2: Put down rat traps. (50 ducats, 40% chance to spawn event 12)
+Option 3: They'll be fine. (event 9)
+
+# Dodos 12
+Title: Dodo is saved. 
+Image: DODO_eventPicture
+Description: Our efforts were effective and we have saved the Dodo from its demise. Now all we have to figure out is how we can make this odd bird a desired pet. 
+Trigger: Success in Dodos 11
+Option 1: Excellent. (3 prestige, 150 ducats, "Dodo Dealer" province modifier (gives extra province basetax modifier))
+
+#
+Title: 
+Image:
+Description:
+Trigger:
+Option 1:

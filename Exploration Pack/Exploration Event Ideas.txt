@@ -141,5 +141,103 @@ Title: A Hoax.. Or Not?
 Image: PLATYPUS_eventPicture
 Description: To prove his right the privateer took the beast with him to the court for all to see. The beast had a furry body, a broad, flat tail and a duckbill on its snout. That's what we saw in front of us. Nature truly couldn't have created a more fascinating creature. And apparently not a hoax. Maybe an apology is in order.
 Trigger: Tasmania colonized
-Option 1: He can't blame us for not believing him, can he? 
+Option 1: He can't blame us for disbelieving him, can he? 
+
+#Kiwi
+Title:
+Image:
+Description: 
+Trigger: 
+Option 1: 
+
+#
+Title:
+Image:
+Description: 
+Trigger: 
+Option 1: 
+
+#
+Title:
+Image:
+Description: 
+Trigger: 
+Option 1: 
+
+#
+Title:
+Image:
+Description: 
+Trigger: 
+Option 1: 
+
+#
+Title:
+Image:
+Description: 
+Trigger: 
+Option 1: 
+
+#
+Title:
+Image:
+Description: 
+Trigger: 
+Option 1: 
+
+#
+Title:
+Image:
+Description: 
+Trigger: 
+Option 1: 
+
+#
+Title:
+Image:
+Description: 
+Trigger: 
+Option 1: 
+
+#
+Title:
+Image:
+Description: 
+Trigger: 
+Option 1: 
+
+#
+Title:
+Image:
+Description: 
+Trigger: 
+Option 1: 
+
+#
+Title:
+Image:
+Description: 
+Trigger: 
+Option 1: 
+
+#
+Title:
+Image:
+Description: 
+Trigger: 
+Option 1: 
+
+#
+Title:
+Image:
+Description: 
+Trigger: 
+Option 1: 
+
+#
+Title:
+Image:
+Description: 
+Trigger: 
+Option 1: 
 
